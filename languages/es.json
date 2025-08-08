@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "Partido Digital Europeo - Referéndum para la Desregulación, IA y Blockchain",
+    "description": "El Partido Digital Europeo - Un partido político moderno para Alemania. Primera iniciativa: Referéndum sobre desregulación, IA y blockchain para modernizar la burocracia alemana.",
+    "og_title": "Partido Digital Europeo - Referéndum para la Desregulación, IA y Blockchain",
+    "og_description": "El futuro de la democracia alemana: La desregulación, IA y blockchain transforman la burocracia alemana en una ventaja competitiva."
+  },
+  "nav": {
+    "home": "Inicio",
+    "initiative": "Referéndum",
+    "examples": "Ejemplos",
+    "emotions": "Emociones",
+    "timeline": "Cronograma",
+    "benefits": "Beneficios",
+    "party_launch": "Lanzamiento del Partido",
+    "bureaucracy_crisis": "Crisis Burocrática",
+    "science": "Ciencia",
+    "direct_democracy": "Democracia Directa",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto",
+    "vote_now": "Votar Ahora"
+  },
+  "hero": {
+    "title": "El Futuro de la Democracia Alemana",
+    "subtitle": "El Partido Digital Europeo te invita al primer referéndum: La desregulación, IA y blockchain transforman la burocracia alemana en una ventaja competitiva.",
+    "learn_more": "Saber Más",
+    "vote_now": "Votar Ahora",
+    "share": "Compartir",
+    "tweet": "Tuitear",
+    "live_results": "Resultados en Vivo",
+    "yes_deregulation": "SÍ - Desregulación & IA",
+    "no_status_quo": "NO - Status quo"
+  },
+  "initiative": {
+    "title": "Nuestro Primer Referéndum",
+    "subtitle": "Del problema burocrático a la ventaja competitiva: La desregulación, IA y blockchain anuncian una nueva era para Alemania",
+    "deregulation": {
+      "title": "Desregulación Inteligente",
+      "description": "Revisión sistemática y simplificación de todas las regulaciones mediante análisis de IA. Las reglas redundantes se identifican y eliminan automáticamente, las reglas significativas se preservan."
+    },
+    "ai": {
+      "title": "Revolución IA",
+      "description": "Una IA neutral y potente supervisa automáticamente y de manera justa el cumplimiento de las regulaciones simplificadas. Detecta irregularidades inmediatamente y previene la arbitrariedad."
+    },
+    "blockchain": {
+      "title": "Transparencia Blockchain",
+      "description": "La tecnología blockchain proporciona almacenamiento transparente y absolutamente seguro de todos los procesos. Cada acto administrativo se documenta de manera rastreable e inviolable."
+    },
+    "advantage": {
+      "title": "Ventaja Competitiva",
+      "description": "Las empresas alemanas aseguran enormes ventajas a través del cumplimiento sin esfuerzo de las regulaciones. Esto reduce costos y acelera las aprobaciones."
+    },
+    "role_model": {
+      "title": "Modelo Mundial",
+      "description": "Alemania se convierte en el primer país en digitalizar y automatizar completamente su complejo paisaje legal. Un modelo para la administración inteligente."
+    },
+    "legal_security": {
+      "title": "Seguridad Jurídica",
+      "description": "La combinación de desregulación, IA y blockchain crea una seguridad jurídica única que atrae empresas de todo el mundo a Alemania."
+    }
+  },
+  "about": {
+    "title": "El Partido Digital Europeo",
+    "description": "Somos un nuevo partido político comprometido con la modernización de Alemania a través de tecnologías innovadoras. Nuestra primera iniciativa: Un referéndum sobre la transformación de la burocracia alemana a través de la desregulación, IA y blockchain.",
+    "stats": {
+      "transparent": {
+        "value": "100%",
+        "label": "Transparente"
+      },
+      "digital": {
+        "value": "Digital",
+        "label": "Futuro"
+      },
+      "germany": {
+        "value": "Alemania",
+        "label": "Primero"
+      }
+    },
+    "tech_stack": {
+      "deregulation": "Desregulación",
+      "ai": "IA",
+      "blockchain": "Blockchain",
+      "democracy": "Democracia",
+      "germany": "Alemania"
+    }
+  },
+  "timeline": {
+    "title": "¿Qué sucede después de una votación exitosa?",
+    "subtitle": "El plan de implementación concreto: Desde la votación hasta la digitalización completa de Alemania",
+    "phase1": {
+      "title": "Fase 1: Implementación Inmediata (0-6 meses)",
+      "subtitle": "Primeros Éxitos",
+      "items": [
+        "Semana 1-4: Establecimiento de la agencia de digitalización con expertos en IA",
+        "Mes 1: Comienza el análisis de IA de todas las regulaciones existentes",
+        "Mes 2: Los proyectos piloto comienzan en 5 estados federales",
+        "Mes 3: Se implementan las primeras medidas de desregulación",
+        "Mes 6: 50% de todas las solicitudes se pueden presentar digitalmente"
+      ],
+      "stats": [
+        "1,000,000 ciudadanos se benefician inmediatamente",
+        "85% menos tiempo de espera"
+      ]
+    },
+    "phase2": {
+      "title": "Fase 2: Digitalización Completa (6-18 meses)",
+      "subtitle": "Cambios Revolucionarios",
+      "items": [
+        "Mes 7-12: La infraestructura blockchain se construye a nivel nacional",
+        "Mes 8: Desregulación sistemática: 30% de las regulaciones se simplifican",
+        "Mes 9: Los sistemas de IA asumen 80% de todas las tareas administrativas",
+        "Mes 12: Todas las autoridades están completamente conectadas digitalmente",
+        "Mes 18: Alemania se convierte en el pionero digital de Europa"
+      ],
+      "stats": [
+        "50,000 nuevos empleos en el sector tecnológico",
+        "€15 mil millones de ahorros anuales"
+      ]
+    },
+    "phase3": {
+      "title": "Fase 3: Liderazgo Internacional (18-36 meses)",
+      "subtitle": "Alemania como Modelo",
+      "items": [
+        "Mes 19-24: Otros países de la UE adoptan los estándares alemanes",
+        "Mes 25: Los sistemas de IA alemanes se exportan mundialmente",
+        "Mes 30: Alemania lidera la digitalización global",
+        "Mes 36: Transformación completa terminada"
+      ],
+      "stats": [
+        "#1 Digitalización mundial",
+        "€50 mil millones de exportaciones en el sector tecnológico"
+      ]
+    }
+  },
+  "benefits": {
+    "title": "Beneficios Concretos para Cada Ciudadano",
+    "subtitle": "Lo que personalmente ganarás de la transformación digital"
+  },
+  "cta": {
+    "title": "¿Listo para el Futuro Digital de Alemania?",
+    "description": "Vota SÍ para un referéndum sobre desregulación, IA y blockchain para modernizar la burocracia alemana. Tu voto decide el futuro de nuestro país.",
+    "vote_now": "Votar Ahora",
+    "learn_more": "Saber Más"
+  },
+  "vote": {
+    "title": "Referéndum: Desregulación, IA y Blockchain para Alemania",
+    "main_title": "Del problema burocrático a la ventaja competitiva: La desregulación, IA y blockchain anuncian una nueva era para Alemania",
+    "intro": "Alemania es conocida por su burocracia minuciosa pero paralizante. Lo que anteriormente se consideraba una desventaja competitiva importante – formularios interminables, reglas complejas y procesos tediosos – ahora podría convertirse en la mayor oportunidad para nuestro país. Porque esta sobre-regulación puede transformarse en una ventaja competitiva única con la ayuda de tecnologías innovadoras como la Inteligencia Artificial (IA) y blockchain.",
+    "vision": "Imagina: Alemania es el primer país en digitalizar y automatizar completamente su complejo paisaje legal. En lugar de ahogarse en montañas de papel como antes, surgen procesos claros, rápidos y justos que alivian y fortalecen a ciudadanos, empresas y autoridades por igual. Alemania podría convertirse en un modelo mundial para la administración inteligente y la innovación del estado de derecho.",
+    "advantage_title": "¿Por qué la burocracia de hoy se convierte en una ventaja competitiva con la desregulación, IA y blockchain?",
+    "advantage_text": "A través de la desregulación sistemática y la traducción digital precisa de las regulaciones existentes en reglas claras y automáticamente aplicables, las empresas alemanas podrían asegurar enormes ventajas. La simplificación inteligente de las regulaciones combinada con el cumplimiento sin esfuerzo reduce costos, acelera las aprobaciones y crea seguridad jurídica que atrae empresas de todo el mundo a Alemania.",
+    "deregulation_title": "¿Qué papel juega la desregulación?",
+    "deregulation_text": "La desregulación inteligente no significa menos reglas, sino mejores reglas. Los sistemas de IA analizan todas las regulaciones existentes e identifican automáticamente las reglas redundantes, contradictorias u obsoletas. Estas se eliminan o simplifican sistemáticamente, mientras que las reglas significativas y necesarias se preservan. El resultado: Un paisaje legal delgado, eficiente y comprensible.",
+    "blockchain_title": "¿Qué papel juega la blockchain?",
+    "blockchain_text": "La tecnología blockchain proporciona almacenamiento transparente y absolutamente seguro de todos los procesos. Cada acto administrativo se documenta de manera rastreable e inviolable. Esto crea confianza, previene el fraude y la manipulación y fortalece la reputación de Alemania como ubicación con la más alta integridad y confiabilidad.",
+    "ai_title": "¿Por qué la IA marca la diferencia decisiva?",
+    "ai_text": "Una IA neutral y potente supervisa automáticamente y de manera justa el cumplimiento de las regulaciones. Detecta irregularidades inmediatamente, reduce errores humanos y previene la arbitrariedad. Esto crea confianza y equidad – tanto entre ciudadanos como inversores internacionales.",
+    "new_era_title": "Una nueva era para Alemania:",
+    "new_era_text": "Con esta revolución tecnológica, Alemania podría convertirse en un pionero y modelo mundial – un país que logra transformar su mayor debilidad en su mayor fortaleza. Innovación en lugar de estancamiento, claridad en lugar de caos burocrático – Alemania podría elevarse para convertirse en una de las sociedades más progresistas del mundo.",
+    "future_title": "¿Por qué esto es lo más importante para el futuro de Alemania?",
+    "future_text": "Solo si ahora tenemos el coraje de modernizar radicalmente nuestra administración, aseguramos prosperidad a largo plazo, competitividad y calidad de vida para las generaciones futuras. La triple combinación de desregulación, IA y blockchain no es solo una oportunidad, sino el prerrequisito decisivo para que Alemania tome un papel de liderazgo en la competencia global y permanezca atractiva para ciudadanos y empresas.",
+    "identity_title": "Verificación de Identidad Digital para Tu Voto",
+    "identity_description": "Para asegurar la integridad del referéndum, utilizamos documentos de identidad digital seguros que son reconocidos en Alemania.",
+    "identity_choose": "Elige tu verificación de identidad:",
+    "zkpassport": {
+      "title": "Pasaporte Rarimo ZK",
+      "description": "Verificación de pasaporte Zero-Knowledge con máxima privacidad",
+      "badge": "Revolucionario & Seguro"
+    },
+    "npa": {
+      "title": "Función de Identidad en Línea (nPA)",
+      "description": "Usa tu tarjeta de identidad con función de identidad en línea",
+      "badge": "Oficialmente reconocido"
+    },
+    "eid": {
+      "title": "Identidad eID",
+      "description": "Identidad digital a través del sistema eID",
+      "badge": "Conforme eIDAS"
+    },
+    "bundid": {
+      "title": "BundID",
+      "description": "Identidad digital nacional",
+      "badge": "Gubernamental"
+    },
+    "video_ident": {
+      "title": "Identificación por Video",
+      "description": "Identificación en línea segura por video",
+      "badge": "Simple & Rápido"
+    }
+  },
+  "party_launch": {
+    "title": "Lanzamiento del Partido: 14 de Septiembre de 2025",
+    "subtitle": "Schloss Burgscheidungen - El Comienzo de una Nueva Era",
+    "description": "Sé parte cuando el Partido Digital Europeo sea fundado oficialmente. Un momento histórico para el futuro digital de Alemania.",
+    "date": "14.9.2025",
+    "time": "14:00",
+    "location": "Schloss Burgscheidungen",
+    "register": "Registrarse Ahora"
+  },
+  "footer": {
+    "party": {
+      "title": "Partido",
+      "links": [
+        "Referéndum",
+        "Ejemplos",
+        "Emociones",
+        "Sobre Nosotros",
+        "Votar"
+      ]
+    },
+    "initiative": {
+      "title": "Iniciativa",
+      "links": [
+        "Crisis Burocrática",
+        "Ciencia",
+        "Democracia Directa",
+        "Beneficios"
+      ]
+    },
+    "legal": {
+      "title": "Legal",
+      "links": [
+        "Privacidad",
+        "Aviso Legal",
+        "Términos"
+      ]
+    },
+    "copyright": "© 2025 Partido Digital Europeo. Todos los derechos reservados."
+  },
+  "language_selector": {
+    "title": "Elegir Idioma",
+    "german": "Deutsch",
+    "english": "English",
+    "french": "Français",
+    "spanish": "Español",
+    "italian": "Italiano"
+  }
+} 

@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "European Digital Party - Volksabstimmung für Deregulierung, KI & Blockchain",
+    "description": "Die European Digital Party - Eine moderne politische Partei für Deutschland. Erste Initiative: Volksabstimmung über Deregulierung, KI und Blockchain zur Modernisierung der deutschen Bürokratie.",
+    "og_title": "European Digital Party - Volksabstimmung für Deregulierung, KI & Blockchain",
+    "og_description": "Die Zukunft der deutschen Demokratie: Deregulierung, KI und Blockchain verwandeln Deutschlands Bürokratie in einen Standortvorteil."
+  },
+  "nav": {
+    "home": "Startseite",
+    "initiative": "Volksabstimmung",
+    "examples": "Beispiele",
+    "emotions": "Emotionen",
+    "timeline": "Zeitplan",
+    "benefits": "Vorteile",
+    "party_launch": "Parteigründung",
+    "bureaucracy_crisis": "Bürokratiekrise",
+    "science": "Wissenschaft",
+    "direct_democracy": "Direkte Demokratie",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "vote_now": "Jetzt abstimmen"
+  },
+  "hero": {
+    "title": "Die Zukunft der deutschen Demokratie",
+    "subtitle": "Die European Digital Party lädt Sie zur ersten Volksabstimmung ein: Deregulierung, KI und Blockchain verwandeln Deutschlands Bürokratie in einen Standortvorteil.",
+    "learn_more": "Mehr erfahren",
+    "vote_now": "Jetzt abstimmen",
+    "share": "Teilen",
+    "tweet": "Tweet",
+    "live_results": "Live Ergebnisse",
+    "yes_deregulation": "JA - Deregulierung & KI",
+    "no_status_quo": "NEIN - Status quo"
+  },
+  "initiative": {
+    "title": "Unsere erste Volksabstimmung",
+    "subtitle": "Vom Bürokratie-Problem zum Standortvorteil: Deregulierung, KI und Blockchain läuten ein neues Zeitalter für Deutschland ein",
+    "deregulation": {
+      "title": "Intelligente Deregulierung",
+      "description": "Systematische Überprüfung und Vereinfachung aller Vorschriften durch KI-Analyse. Überflüssige Regeln werden automatisch identifiziert und entfernt, sinnvolle Regeln bleiben erhalten."
+    },
+    "ai": {
+      "title": "KI-Revolution",
+      "description": "Eine neutrale und leistungsfähige KI überwacht automatisch und gerecht die Einhaltung der vereinfachten Vorschriften. Sie erkennt Unregelmäßigkeiten sofort und verhindert Willkür."
+    },
+    "blockchain": {
+      "title": "Blockchain-Transparenz",
+      "description": "Blockchain-Technologie bietet eine transparente und absolut sichere Speicherung aller Vorgänge. Jeder Verwaltungsakt wird nachvollziehbar und fälschungssicher dokumentiert."
+    },
+    "advantage": {
+      "title": "Standortvorteil",
+      "description": "Deutsche Unternehmen sichern sich enorme Vorteile durch mühelose Einhaltung von Vorschriften. Das reduziert Kosten und beschleunigt Genehmigungen."
+    },
+    "role_model": {
+      "title": "Weltweites Vorbild",
+      "description": "Deutschland wird zum ersten Land, das seine komplizierte Gesetzeslandschaft vollständig digitalisiert und automatisiert. Ein Vorbild für intelligente Verwaltung."
+    },
+    "legal_security": {
+      "title": "Rechtssicherheit",
+      "description": "Die Kombination aus Deregulierung, KI und Blockchain schafft eine einzigartige Rechtssicherheit, die Unternehmen aus aller Welt nach Deutschland zieht."
+    }
+  },
+  "about": {
+    "title": "Die European Digital Party",
+    "description": "Wir sind eine neue politische Partei, die sich der Modernisierung Deutschlands durch innovative Technologien verschrieben hat. Unsere erste Initiative: Eine Volksabstimmung über die Transformation der deutschen Bürokratie durch Deregulierung, KI und Blockchain.",
+    "stats": {
+      "transparent": {
+        "value": "100%",
+        "label": "Transparent"
+      },
+      "digital": {
+        "value": "Digital",
+        "label": "Zukunft"
+      },
+      "germany": {
+        "value": "Deutschland",
+        "label": "Erst"
+      }
+    },
+    "tech_stack": {
+      "deregulation": "Deregulierung",
+      "ai": "KI",
+      "blockchain": "Blockchain",
+      "democracy": "Demokratie",
+      "germany": "Deutschland"
+    }
+  },
+  "timeline": {
+    "title": "Was passiert nach einer erfolgreichen Abstimmung?",
+    "subtitle": "Der konkrete Fahrplan zur Umsetzung: Von der Abstimmung bis zur vollständigen Digitalisierung Deutschlands",
+    "phase1": {
+      "title": "Phase 1: Sofortige Umsetzung (0-6 Monate)",
+      "subtitle": "Erste Erfolge",
+      "items": [
+        "Woche 1-4: Gründung der Digitalisierungsbehörde mit KI-Experten",
+        "Monat 1: KI-Analyse aller bestehenden Vorschriften beginnt",
+        "Monat 2: Pilotprojekte in 5 Bundesländern starten",
+        "Monat 3: Erste Deregulierungsmaßnahmen werden umgesetzt",
+        "Monat 6: 50% aller Anträge können digital eingereicht werden"
+      ],
+      "stats": [
+        "1.000.000 Bürger profitieren sofort",
+        "85% weniger Wartezeiten"
+      ]
+    },
+    "phase2": {
+      "title": "Phase 2: Vollständige Digitalisierung (6-18 Monate)",
+      "subtitle": "Revolutionäre Veränderungen",
+      "items": [
+        "Monat 7-12: Blockchain-Infrastruktur wird bundesweit aufgebaut",
+        "Monat 8: Systematische Deregulierung: 30% der Vorschriften werden vereinfacht",
+        "Monat 9: KI-Systeme übernehmen 80% aller Verwaltungsaufgaben",
+        "Monat 12: Alle Behörden sind vollständig digital vernetzt",
+        "Monat 18: Deutschland wird zum digitalen Vorreiter Europas"
+      ],
+      "stats": [
+        "50.000 neue Arbeitsplätze im Tech-Sektor",
+        "€15 Milliarden jährliche Einsparungen"
+      ]
+    },
+    "phase3": {
+      "title": "Phase 3: Internationale Führungsrolle (18-36 Monate)",
+      "subtitle": "Deutschland als Vorbild",
+      "items": [
+        "Monat 19-24: Andere EU-Länder übernehmen deutsche Standards",
+        "Monat 25: Deutsche KI-Systeme werden weltweit exportiert",
+        "Monat 30: Deutschland führt die globale Digitalisierung an",
+        "Monat 36: Vollständige Transformation abgeschlossen"
+      ],
+      "stats": [
+        "#1 Digitalisierung weltweit",
+        "€50 Milliarden Exporte im Tech-Sektor"
+      ]
+    }
+  },
+  "benefits": {
+    "title": "Konkrete Vorteile für jeden Bürger",
+    "subtitle": "Was Sie persönlich von der digitalen Transformation haben werden"
+  },
+  "cta": {
+    "title": "Bereit für Deutschlands digitale Zukunft?",
+    "description": "Stimmen Sie JA für eine Volksabstimmung über Deregulierung, KI und Blockchain zur Modernisierung der deutschen Bürokratie. Ihre Stimme entscheidet über die Zukunft unseres Landes.",
+    "vote_now": "Jetzt abstimmen",
+    "learn_more": "Mehr erfahren"
+  },
+  "vote": {
+    "title": "Volksabstimmung: Deregulierung, KI und Blockchain für Deutschland",
+    "main_title": "Vom Bürokratie-Problem zum Standortvorteil: Deregulierung, KI und Blockchain läuten ein neues Zeitalter für Deutschland ein",
+    "intro": "Deutschland ist bekannt für seine gründliche, aber auch lähmende Bürokratie. Was bisher als großer Wettbewerbsnachteil galt – endlose Formulare, komplexe Regeln und mühsame Prozesse – könnte nun zur größten Chance für unser Land werden. Denn genau diese Überregulierung kann mit Hilfe innovativer Technologien wie Künstlicher Intelligenz (KI) und Blockchain in einen einzigartigen Standortvorteil verwandelt werden.",
+    "vision": "Stellen Sie sich vor: Deutschland ist das erste Land, das seine komplizierte Gesetzeslandschaft vollständig digitalisiert und automatisiert. Anstatt wie bisher in Papierbergen zu ersticken, entstehen klare, schnelle und gerechte Abläufe, die Bürger, Unternehmen und Behörden gleichermaßen entlasten und stärken. Deutschland könnte weltweit zum Vorbild für intelligente Verwaltung und rechtsstaatliche Innovation werden.",
+    "advantage_title": "Warum wird die heutige Bürokratie mit Deregulierung, KI und Blockchain zum Wettbewerbsvorteil?",
+    "advantage_text": "Durch systematische Deregulierung und die präzise digitale Übersetzung bestehender Vorschriften in eindeutige und automatisch anwendbare Regeln könnten sich deutsche Unternehmen enorme Vorteile sichern. Die intelligente Vereinfachung von Vorschriften kombiniert mit müheloser Einhaltung reduziert Kosten, beschleunigt Genehmigungen und schafft Rechtssicherheit, die Unternehmen aus aller Welt nach Deutschland zieht.",
+    "deregulation_title": "Welche Rolle spielt die Deregulierung dabei?",
+    "deregulation_text": "Intelligente Deregulierung bedeutet nicht weniger Regeln, sondern bessere Regeln. KI-Systeme analysieren alle bestehenden Vorschriften und identifizieren automatisch überflüssige, widersprüchliche oder veraltete Regelungen. Diese werden systematisch entfernt oder vereinfacht, während sinnvolle und notwendige Regeln erhalten bleiben. Das Ergebnis: Eine schlanke, effiziente und verständliche Rechtslandschaft.",
+    "blockchain_title": "Welche Rolle spielt die Blockchain dabei?",
+    "blockchain_text": "Blockchain-Technologie bietet eine transparente und absolut sichere Speicherung aller Vorgänge. Jeder Verwaltungsakt wird nachvollziehbar und fälschungssicher dokumentiert. Das schafft Vertrauen, verhindert Betrug und Manipulation und stärkt Deutschlands Ruf als Standort mit höchster Integrität und Zuverlässigkeit.",
+    "ai_title": "Warum KI den entscheidenden Unterschied macht:",
+    "ai_text": "Eine neutrale und leistungsfähige KI überwacht automatisch und gerecht die Einhaltung der Vorschriften. Sie erkennt Unregelmäßigkeiten sofort, reduziert menschliche Fehler und verhindert Willkür. Dies schafft Vertrauen und Fairness – sowohl bei Bürgern als auch bei internationalen Investoren.",
+    "new_era_title": "Ein neues Zeitalter für Deutschland:",
+    "new_era_text": "Mit dieser technologischen Revolution könnte Deutschland weltweit Vorreiter und Vorbild werden – ein Land, das es schafft, seine größte Schwäche in die größte Stärke zu verwandeln. Innovation statt Stillstand, Klarheit statt Bürokratie-Chaos – Deutschland könnte zu einer der fortschrittlichsten Gesellschaften der Welt aufsteigen.",
+    "future_title": "Warum dies das Wichtigste für Deutschlands Zukunft ist:",
+    "future_text": "Nur wenn wir jetzt den Mut haben, unsere Verwaltung radikal zu modernisieren, sichern wir langfristig Wohlstand, Wettbewerbsfähigkeit und Lebensqualität für kommende Generationen. Die Dreifach-Kombination aus Deregulierung, KI und Blockchain ist nicht nur eine Chance, sondern die entscheidende Voraussetzung dafür, dass Deutschland im globalen Wettbewerb eine Führungsrolle einnimmt und für Bürger und Unternehmen attraktiv bleibt.",
+    "identity_title": "Digitale Identitätsverifizierung für Ihre Stimme",
+    "identity_description": "Um die Integrität der Volksabstimmung zu gewährleisten, verwenden wir sichere digitale Identitätsnachweise, die in Deutschland anerkannt sind.",
+    "identity_choose": "Wählen Sie Ihre Identitätsverifizierung:",
+    "zkpassport": {
+      "title": "Rarimo ZK Passport",
+      "description": "Zero-Knowledge Passport-Verifizierung mit maximaler Privatsphäre",
+      "badge": "Revolutionär & Sicher"
+    },
+    "npa": {
+      "title": "Online-Ausweisfunktion (nPA)",
+      "description": "Verwenden Sie Ihren Personalausweis mit Online-Ausweisfunktion",
+      "badge": "Offiziell anerkannt"
+    },
+    "eid": {
+      "title": "eID-Identität",
+      "description": "Digitale Identität über eID-System",
+      "badge": "eIDAS-konform"
+    },
+    "bundid": {
+      "title": "BundID",
+      "description": "Bundesweite digitale Identität",
+      "badge": "Staatlich"
+    },
+    "video_ident": {
+      "title": "Video-Identifikation",
+      "description": "Sichere Online-Identifikation per Video",
+      "badge": "Einfach & Schnell"
+    }
+  },
+  "party_launch": {
+    "title": "Parteigründung: 14. September 2025",
+    "subtitle": "Schloss Burgscheidungen - Der Beginn einer neuen Ära",
+    "description": "Seien Sie dabei, wenn die European Digital Party offiziell gegründet wird. Ein historischer Moment für Deutschlands digitale Zukunft.",
+    "date": "14.9.2025",
+    "time": "14:00 Uhr",
+    "location": "Schloss Burgscheidungen",
+    "register": "Jetzt anmelden"
+  },
+  "footer": {
+    "party": {
+      "title": "Partei",
+      "links": [
+        "Volksabstimmung",
+        "Beispiele",
+        "Emotionen",
+        "Über uns",
+        "Abstimmen"
+      ]
+    },
+    "initiative": {
+      "title": "Initiative",
+      "links": [
+        "Bürokratiekrise",
+        "Wissenschaft",
+        "Direkte Demokratie",
+        "Vorteile"
+      ]
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "links": [
+        "Datenschutz",
+        "Impressum",
+        "AGB"
+      ]
+    },
+    "copyright": "© 2025 European Digital Party. Alle Rechte vorbehalten."
+  },
+  "language_selector": {
+    "title": "Sprache wählen",
+    "german": "Deutsch",
+    "english": "English",
+    "french": "Français",
+    "spanish": "Español",
+    "italian": "Italiano"
+  }
+} 
