@@ -1,1099 +1,386 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>European Digital Party - Die Zukunft der Demokratie</title>
-    <meta name="description" content="Die European Digital Party - Eine moderne politische Partei für Deutschland. Erste Initiative: Volksabstimmung über KI und Blockchain zur Modernisierung der deutschen Bürokratie.">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Open Graph Meta Tags for Social Media -->
-    <meta property="og:title" content="European Digital Party - Volksabstimmung für KI & Blockchain">
-    <meta property="og:description" content="Stimmen Sie für Deutschlands digitale Zukunft! KI und Blockchain verwandeln Bürokratie in einen Standortvorteil.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
-    <meta property="og:url" content="https://europeandigital.party">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="European Digital Party - Volksabstimmung">
-    <meta name="twitter:description" content="Stimmen Sie für Deutschlands digitale Zukunft!">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Europäische Digitalpartei (EDP)</title>
+  <meta name="description" content="Bürokratie abbauen. Demokratie stärken. Mit KI, Blockchain und digitalen Volksabstimmungen auf allen Ebenen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind via CDN (no build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-
-
-    <!-- Social Media Share Bar -->
-    <div class="social-share-bar">
-        <div class="social-share-container">
-            <span class="share-label">Teilen:</span>
-            <button class="social-btn facebook" onclick="shareOnFacebook()">
-                <i class="fab fa-facebook-f"></i>
-            </button>
-            <button class="social-btn twitter" onclick="shareOnTwitter()">
-                <i class="fab fa-twitter"></i>
-            </button>
-            <button class="social-btn linkedin" onclick="shareOnLinkedIn()">
-                <i class="fab fa-linkedin-in"></i>
-            </button>
-            <button class="social-btn whatsapp" onclick="shareOnWhatsApp()">
-                <i class="fab fa-whatsapp"></i>
-            </button>
-            <button class="social-btn telegram" onclick="shareOnTelegram()">
-                <i class="fab fa-telegram-plane"></i>
-            </button>
-            <button class="like-btn" onclick="toggleLike()">
-                <i class="fas fa-heart"></i>
-                <span id="likeCount">1.2K</span>
-            </button>
+<body class="min-h-screen bg-white text-slate-900 font-[Inter]">
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#start" class="group inline-flex items-center gap-2">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-emerald-500 text-white font-black">EDP</span>
+          <span class="font-semibold text-slate-900 group-hover:text-blue-700 transition-colors">Europäische Digitalpartei</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#mission" class="text-slate-600 hover:text-slate-900">Mission</a>
+          <a href="#probleme" class="text-slate-600 hover:text-slate-900">Probleme</a>
+          <a href="#loesung" class="text-slate-600 hover:text-slate-900">Lösung</a>
+          <a href="#abstimmungen" class="text-slate-600 hover:text-slate-900">Abstimmungen</a>
+          <a href="#programm" class="text-slate-600 hover:text-slate-900">Programm</a>
+          <a href="#fahrplan" class="text-slate-600 hover:text-slate-900">Fahrplan</a>
+          <a href="#quellen" class="text-slate-600 hover:text-slate-900">Quellen</a>
+          <a href="#faq" class="text-slate-600 hover:text-slate-900">FAQ</a>
+          <a href="#kontakt" class="text-slate-600 hover:text-slate-900">Kontakt</a>
+          <a href="#kontakt" class="ml-2 inline-flex items-center rounded-lg bg-blue-600 px-3 py-2 text-white text-sm font-semibold shadow hover:bg-blue-700">Mitmachen</a>
+        </nav>
+        <div class="md:hidden">
+          <a href="#kontakt" class="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-3 py-2 text-white text-sm font-semibold shadow hover:bg-blue-700">Mitmachen</a>
         </div>
+      </div>
     </div>
+  </header>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-                            <div class="nav-logo">
-                    <img src="assets/logo.jpg" alt="European Digital Party Logo" class="logo-image">
-                    <span>European Digital Party</span>
-                </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Startseite</a></li>
-                <li><a href="#initiative" class="nav-link">Volksabstimmung</a></li>
-                <li><a href="#examples" class="nav-link">Beispiele</a></li>
-                <li><a href="#emotions" class="nav-link">Emotionen</a></li>
-                <li><a href="#success-timeline" class="nav-link">Zeitplan</a></li>
-                <li><a href="#concrete-benefits" class="nav-link">Vorteile</a></li>
-                <li><a href="#party-launch" class="nav-link">Parteigründung</a></li>
-                <li><a href="pages/bureaucracy-crisis.html" class="nav-link">Bürokratiekrise</a></li>
-                <li><a href="pages/wissenschaftliche-begruendung.html" class="nav-link">Wissenschaft</a></li>
-                <li><a href="pages/direkte-demokratie.html" class="nav-link">Direkte Demokratie</a></li>
-                <li><a href="pages/about.html" class="nav-link">Über uns</a></li>
-                <li><a href="pages/contact.html" class="nav-link">Kontakt</a></li>
-                <li><a href="#vote" class="nav-link btn-primary">Jetzt abstimmen</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <!-- Aufmacher -->
+  <section id="start" class="scroll-mt-24 py-16 md:py-24 bg-gradient-to-br from-blue-700 via-blue-600 to-emerald-600 text-white">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid items-center gap-10 py-10 md:grid-cols-2 md:py-20">
+      <div>
+        <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset bg-blue-50/10 text-white ring-white/20">✨ Neuer Gesellschaftsvertrag</span>
+        <h1 class="mt-4 text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">
+          Bürokratie abbauen. Demokratie stärken.
+          <span class="block text-emerald-200">Mit KI, Blockchain und gesundem Menschenverstand.</span>
+        </h1>
+        <p class="mt-4 max-w-prose text-blue-50/90">
+          Staat darf sich nicht wie ein Hindernislauf anfühlen. <strong>EDP</strong> verbindet Verwaltungsreform mit echter Mitbestimmung – sicher, überprüfbar, menschlich.
+        </p>
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a href="#kontakt" class="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 text-sm font-semibold text-blue-700 shadow hover:bg-blue-50">Jetzt mitmachen</a>
+          <a href="#programm" class="inline-flex items-center justify-center rounded-md bg-white/10 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/30 hover:bg-white/20">Programm lesen</a>
         </div>
-    </nav>
-
-
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80')"></div>
-            <div class="hero-overlay"></div>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset bg-emerald-50 text-emerald-700 ring-emerald-200">✔ Datenschutz ab Werk</span>
+          <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset bg-slate-50 text-slate-700 ring-slate-200">✔ ZK‑Abstimmungen</span>
+          <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset bg-amber-50 text-amber-700 ring-amber-200">✔ Öffentliche Prüfungen</span>
         </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Die Zukunft der <span class="highlight">deutschen Demokratie</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Die European Digital Party lädt Sie zur ersten Volksabstimmung ein: 
-                    <strong>Deregulierung, KI und Blockchain</strong> verwandeln Deutschlands Bürokratie in einen Standortvorteil.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#initiative" class="btn btn-primary">Mehr erfahren</a>
-                    <a href="#vote" class="btn btn-secondary">Jetzt abstimmen</a>
-                </div>
-                
-                <!-- Social Media Buttons for Hero -->
-                <div class="hero-social">
-                    <button class="social-btn facebook" onclick="shareOnFacebook()">
-                        <i class="fab fa-facebook-f"></i>
-                        <span>Teilen</span>
-                    </button>
-                    <button class="social-btn twitter" onclick="shareOnTwitter()">
-                        <i class="fab fa-twitter"></i>
-                        <span>Tweet</span>
-                    </button>
-                    <button class="like-btn hero-like" onclick="toggleLike()">
-                        <i class="fas fa-heart"></i>
-                        <span id="heroLikeCount">1.2K</span>
-                    </button>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-card">
-                    <div class="card-header">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Live Ergebnisse</span>
-                    </div>
-                    <div class="vote-progress">
-                        <div class="vote-option">
-                            <span>JA - Deregulierung & KI</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 78%"></div>
-                            </div>
-                            <span>78%</span>
-                        </div>
-                        <div class="vote-option">
-                            <span>NEIN - Status quo</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 22%"></div>
-                            </div>
-                            <span>22%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div>
+        <div class="border-0 shadow-2xl bg-white/10 backdrop-blur ring-1 ring-white/20 rounded-xl p-6">
+          <h3 class="text-white text-lg font-semibold">So funktioniert der digitale Volksentscheid</h3>
+          <ol class="mt-4 space-y-3 text-sm text-white/90 list-decimal list-inside">
+            <li><strong>Identität</strong> per eIDAS/Online‑Ausweis – lokal verifiziert, kein zentrales Personenregister.</li>
+            <li><strong>Abstimmung</strong> via Zero‑Knowledge‑Beweis: Stimme zählt, Identität bleibt verborgen.</li>
+            <li><strong>Prüfung</strong> auf einer öffentlichen, genehmigten Blockchain – Ergebnis ist fälschungssicher.</li>
+          </ol>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Initiative Section -->
-    <section id="initiative" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Unsere erste Volksabstimmung</h2>
-                <p>Vom Bürokratie-Problem zum Standortvorteil: <strong>Deregulierung, KI und Blockchain</strong> läuten ein neues Zeitalter für Deutschland ein</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-scissors"></i>
-                    </div>
-                    <h3>Intelligente Deregulierung</h3>
-                    <p>Systematische Überprüfung und Vereinfachung aller Vorschriften durch KI-Analyse. Überflüssige Regeln werden automatisch identifiziert und entfernt, sinnvolle Regeln bleiben erhalten.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>KI-Revolution</h3>
-                    <p>Eine neutrale und leistungsfähige KI überwacht automatisch und gerecht die Einhaltung der vereinfachten Vorschriften. Sie erkennt Unregelmäßigkeiten sofort und verhindert Willkür.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-link"></i>
-                    </div>
-                    <h3>Blockchain-Transparenz</h3>
-                    <p>Blockchain-Technologie bietet eine transparente und absolut sichere Speicherung aller Vorgänge. Jeder Verwaltungsakt wird nachvollziehbar und fälschungssicher dokumentiert.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Standortvorteil</h3>
-                    <p>Deutsche Unternehmen sichern sich enorme Vorteile durch mühelose Einhaltung von Vorschriften. Das reduziert Kosten und beschleunigt Genehmigungen.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>Weltweites Vorbild</h3>
-                    <p>Deutschland wird zum ersten Land, das seine komplizierte Gesetzeslandschaft vollständig digitalisiert und automatisiert. Ein Vorbild für intelligente Verwaltung.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Rechtssicherheit</h3>
-                    <p>Die Kombination aus KI und Blockchain schafft Vertrauen und Fairness – sowohl bei Bürgern als auch bei internationalen Investoren.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Zukunftssicherung</h3>
-                    <p>Nur durch radikale Modernisierung sichern wir langfristig Wohlstand, Wettbewerbsfähigkeit und Lebensqualität für kommende Generationen.</p>
-                </div>
-            </div>
+  <!-- Mission -->
+  <section id="mission" class="scroll-mt-24 py-16 md:py-24 bg-white">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-3">
+      <div class="rounded-xl border p-6 hover:shadow-xl transition-shadow">
+        <h3 class="text-slate-800 text-lg font-semibold">Effiziente Verwaltung</h3>
+        <p class="mt-2 text-slate-600">KI reduziert Wartezeiten, beseitigt Doppelarbeit und schafft Zeit für Service am Menschen.</p>
+      </div>
+      <div class="rounded-xl border p-6 hover:shadow-xl transition-shadow">
+        <h3 class="text-slate-800 text-lg font-semibold">Nachvollziehbare Prozesse</h3>
+        <p class="mt-2 text-slate-600">Blockchain protokolliert Entscheidungen unveränderlich – überprüfbar für alle.</p>
+      </div>
+      <div class="rounded-xl border p-6 hover:shadow-xl transition-shadow">
+        <h3 class="text-slate-800 text-lg font-semibold">Direkte Teilhabe</h3>
+        <p class="mt-2 text-slate-600">Volksabstimmungen von der Gemeinde bis Europa – barrierearm und sicher.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Probleme -->
+  <section id="probleme" class="scroll-mt-24 py-16 md:py-24 bg-slate-50">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-2">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">Die Lage: komplex, langsam, intransparent</h2>
+        <p class="mt-3 text-slate-700">Genehmigungen dauern Monate, Regeln widersprechen sich, Daten liegen in Silos. Ergebnis: Frust bei Bürgern, Kosten für Unternehmen, Überlastung der Behörden.</p>
+        <ul class="mt-4 space-y-3 text-slate-800">
+          <li>• Lange Verfahren und hohe Transaktionskosten</li>
+          <li>• Unübersichtliche Rechtslage und Doppelungen</li>
+          <li>• Fehlende Nachvollziehbarkeit und Vertrauen</li>
+        </ul>
+      </div>
+      <div class="rounded-xl border p-6 bg-white">
+        <h3 class="text-lg font-semibold">Was Menschen berichten</h3>
+        <div class="mt-3 space-y-3 text-sm text-slate-700">
+          <p>„Anträge sind überall anders und keiner weiß, was wirklich gilt.“</p>
+          <p>„Wir warten Wochen auf Rückmeldung – telefonisch nicht erreichbar.“</p>
+          <p>„Es gibt drei Portale, keines spricht mit dem anderen.“</p>
+          <p class="text-slate-500">* Beispiele sinngemäß aus häufigen Nutzerbeschwerden.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Examples Section -->
-    <section id="examples" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Konkrete Beispiele: Wie KI und Blockchain alles vereinfachen</h2>
-                <p>Von der Theorie zur Praxis: Echte Anwendungsfälle, die zeigen, wie Deutschland zum digitalen Vorreiter wird</p>
-            </div>
-            
-            <div class="examples-grid">
-                <div class="example-category">
-                    <h3><i class="fas fa-building"></i> Unternehmensgründung</h3>
-                    <div class="example-items">
-                        <div class="example-item">
-                            <h4>Vorher: 3-6 Monate Gründungsprozess</h4>
-                            <ul>
-                                <li>15 verschiedene Formulare bei verschiedenen Ämtern</li>
-                                <li>Persönliche Termine bei 8 verschiedenen Behörden</li>
-                                <li>Wiederholte Dokumentenvorlage bei jedem Amt</li>
-                                <li>Unklare Zuständigkeiten und Widersprüche</li>
-                                <li>Hohe Kosten für Rechtsberatung</li>
-                            </ul>
-                        </div>
-                        <div class="example-item">
-                            <h4>Nachher: 24 Stunden - vollautomatisch</h4>
-                            <ul>
-                                <li><strong>KI-System</strong> führt durch den gesamten Prozess</li>
-                                <li><strong>Blockchain</strong> speichert alle Dokumente sicher und unveränderlich</li>
-                                <li>Automatische Prüfung aller Voraussetzungen</li>
-                                <li>Digitale Unterschriften mit höchster Sicherheit</li>
-                                <li>Echtzeit-Updates über den Status</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="example-category">
-                    <h3><i class="fas fa-home"></i> Immobilienkauf</h3>
-                    <div class="example-items">
-                        <div class="example-item">
-                            <h4>Vorher: 6-12 Monate Kaufprozess</h4>
-                            <ul>
-                                <li>Grundbuchauszug bei Gericht beantragen</li>
-                                <li>Notartermin mit allen Beteiligten koordinieren</li>
-                                <li>Finanzamt für Grunderwerbsteuer kontaktieren</li>
-                                <li>Gemeinde für Grundsteuer informieren</li>
-                                <li>Versicherungen und Banken separat informieren</li>
-                            </ul>
-                        </div>
-                        <div class="example-item">
-                            <h4>Nachher: 1 Woche - vollständig digital</h4>
-                            <ul>
-                                <li><strong>Blockchain-Grundbuch</strong> mit Echtzeit-Zugriff</li>
-                                <li><strong>KI-Notar</strong> prüft automatisch alle Dokumente</li>
-                                <li>Automatische Steuerberechnung und -abführung</li>
-                                <li>Digitale Eigentumsübertragung in Echtzeit</li>
-                                <li>Alle Beteiligten werden automatisch informiert</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="example-category">
-                    <h3><i class="fas fa-car"></i> Fahrzeugzulassung</h3>
-                    <div class="example-items">
-                        <div class="example-item">
-                            <h4>Vorher: 2-4 Wochen Wartezeit</h4>
-                            <ul>
-                                <li>Termin bei Zulassungsstelle (oft erst in 3 Wochen)</li>
-                                <li>Persönliche Vorsprache mit allen Dokumenten</li>
-                                <li>Wartezeit von 2-4 Stunden vor Ort</li>
-                                <li>Manuelle Prüfung durch Beamte</li>
-                                <li>Separate Versicherungsbestätigung erforderlich</li>
-                            </ul>
-                        </div>
-                        <div class="example-item">
-                            <h4>Nachher: 10 Minuten - online</h4>
-                            <ul>
-                                <li><strong>KI-System</strong> prüft alle Unterlagen automatisch</li>
-                                <li><strong>Blockchain</strong> verifiziert Versicherung und Eigentum</li>
-                                <li>Digitale Kennzeichenbestellung</li>
-                                <li>Automatische Zulassung ohne Wartezeit</li>
-                                <li>Digitale Fahrzeugpapiere sofort verfügbar</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="example-category">
-                    <h3><i class="fas fa-graduation-cap"></i> Studienplatzvergabe</h3>
-                    <div class="example-items">
-                        <div class="example-item">
-                            <h4>Vorher: Komplexe NC-Verfahren</h4>
-                            <ul>
-                                <li>Bewerbung bei jeder Uni separat</li>
-                                <li>Manuelle Prüfung von Zeugnissen</li>
-                                <li>Unklare Zulassungskriterien</li>
-                                <li>Lange Wartezeiten für Entscheidungen</li>
-                                <li>Häufige Widersprüche und Klagen</li>
-                            </ul>
-                        </div>
-                        <div class="example-item">
-                            <h4>Nachher: Transparente KI-Verteilung</h4>
-                            <ul>
-                                <li><strong>KI-System</strong> bewertet objektiv alle Bewerber</li>
-                                <li><strong>Blockchain</strong> speichert Zeugnisse fälschungssicher</li>
-                                <li>Transparente Algorithmen für alle sichtbar</li>
-                                <li>Sofortige Zulassungsentscheidungen</li>
-                                <li>Automatische Platzvergabe nach Fairness-Kriterien</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="example-category">
-                    <h3><i class="fas fa-heartbeat"></i> Gesundheitswesen</h3>
-                    <div class="example-items">
-                        <div class="example-item">
-                            <h4>Vorher: Fragmentierte Patientenakten</h4>
-                            <ul>
-                                <li>Jeder Arzt hat eigene Akten</li>
-                                <li>Patient muss Krankengeschichte wiederholen</li>
-                                <li>Doppelte Untersuchungen durch fehlende Daten</li>
-                                <li>Manuelle Überweisungen zwischen Ärzten</li>
-                                <li>Hohe Fehlerrate durch Informationsverlust</li>
-                            </ul>
-                        </div>
-                        <div class="example-item">
-                            <h4>Nachher: Einheitliche Gesundheitsblockchain</h4>
-                            <ul>
-                                <li><strong>Blockchain</strong> speichert alle medizinischen Daten sicher</li>
-                                <li><strong>KI-System</strong> erkennt Krankheitsmuster frühzeitig</li>
-                                <li>Automatische Überweisungen zwischen Ärzten</li>
-                                <li>Patient behält volle Kontrolle über seine Daten</li>
-                                <li>Reduzierung von Fehldiagnosen um 80%</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="example-category">
-                    <h3><i class="fas fa-euro-sign"></i> Steuererklärung</h3>
-                    <div class="example-items">
-                        <div class="example-item">
-                            <h4>Vorher: Komplexe manuelle Erklärung</h4>
-                            <ul>
-                                <li>Hunderte von Formularen und Anlagen</li>
-                                <li>Manuelle Eingabe aller Daten</li>
-                                <li>Fehleranfällige Berechnungen</li>
-                                <li>Lange Prüfungszeiten beim Finanzamt</li>
-                                <li>Häufige Nachforderungen und Korrekturen</li>
-                            </ul>
-                        </div>
-                        <div class="example-item">
-                            <h4>Nachher: Automatische KI-Steuererklärung</h4>
-                            <ul>
-                                <li><strong>KI-System</strong> erstellt Erklärung automatisch</li>
-                                <li><strong>Blockchain</strong> verifiziert alle Einkünfte</li>
-                                <li>Automatische Optimierung der Steuerlast</li>
-                                <li>Sofortige Rückerstattung bei Guthaben</li>
-                                <li>Reduzierung der Bearbeitungszeit um 95%</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Neue Beispiele -->
-                <div class="example-category">
-                    <h3><i class="fas fa-plane"></i> Reisepass & Ausweise</h3>
-                    <div class="example-items">
-                        <div class="example-item">
-                            <h4>Vorher: 4-6 Wochen Wartezeit</h4>
-                            <ul>
-                                <li>Termin beim Bürgeramt (oft erst in 2 Monaten)</li>
-                                <li>Persönliche Vorsprache mit Foto</li>
-                                <li>Manuelle Prüfung der Unterlagen</li>
-                                <li>Postversand der Dokumente</li>
-                                <li>Häufige Verzögerungen und Nachfragen</li>
-                            </ul>
-                        </div>
-                        <div class="example-item">
-                            <h4>Nachher: 48 Stunden - digital</h4>
-                            <ul>
-                                <li><strong>KI-System</strong> verifiziert Identität automatisch</li>
-                                <li><strong>Blockchain</strong> speichert biometrische Daten sicher</li>
-                                <li>Digitale Foto-Upload und -Verarbeitung</li>
-                                <li>Automatische Dokumentenerstellung</li>
-                                <li>Digitale Auslieferung oder Express-Versand</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="example-category">
-                    <h3><i class="fas fa-briefcase"></i> Arbeitslosengeld</h3>
-                    <div class="example-items">
-                        <div class="example-item">
-                            <h4>Vorher: Komplexe Antragsverfahren</h4>
-                            <ul>
-                                <li>Persönliche Vorsprache beim Arbeitsamt</li>
-                                <li>Hunderte von Formularen ausfüllen</li>
-                                <li>Manuelle Prüfung aller Unterlagen</li>
-                                <li>Lange Wartezeiten für Entscheidungen</li>
-                                <li>Häufige Ablehnungen durch Formfehler</li>
-                            </ul>
-                        </div>
-                        <div class="example-item">
-                            <h4>Nachher: Automatische Bearbeitung</h4>
-                            <ul>
-                                <li><strong>KI-System</strong> prüft Anspruch automatisch</li>
-                                <li><strong>Blockchain</strong> verifiziert Arbeitshistorie</li>
-                                <li>Automatische Berechnung der Leistungen</li>
-                                <li>Sofortige Auszahlung bei Anspruch</li>
-                                <li>Proaktive Job-Vorschläge durch KI</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="example-category">
-                    <h3><i class="fas fa-leaf"></i> Umweltschutz & Genehmigungen</h3>
-                    <div class="example-items">
-                        <div class="example-item">
-                            <h4>Vorher: Jahre lange Verfahren</h4>
-                            <ul>
-                                <li>Komplexe Umweltverträglichkeitsprüfungen</li>
-                                <li>Manuelle Datensammlung und -auswertung</li>
-                                <li>Lange Wartezeiten für Genehmigungen</li>
-                                <li>Häufige Klagen und Verzögerungen</li>
-                                <li>Hohe Kosten für Gutachten</li>
-                            </ul>
-                        </div>
-                        <div class="example-item">
-                            <h4>Nachher: Intelligente Umweltüberwachung</h4>
-                            <ul>
-                                <li><strong>KI-System</strong> analysiert Umweltdaten automatisch</li>
-                                <li><strong>Blockchain</strong> dokumentiert alle Messungen</li>
-                                <li>Echtzeit-Überwachung von Emissionen</li>
-                                <li>Automatische Genehmigungen bei Einhaltung</li>
-                                <li>Proaktive Umweltschutzmaßnahmen</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Lösung -->
+  <section id="loesung" class="scroll-mt-24 py-16 md:py-24 bg-white">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Die Lösung: schlanke Regeln, smarte Abläufe, sichere Abstimmungen</h2>
+      <p class="mt-3 text-slate-700">EDP setzt auf eine kombinierte Reform von Recht, IT und Prozessen. Technologie ist Mittel zum Zweck – nicht Selbstzweck.</p>
+      <div class="grid gap-6 md:grid-cols-3 mt-8">
+        <div class="rounded-xl border p-6 hover:shadow-xl transition">
+          <h3 class="text-lg font-semibold">KI‑Assistenz</h3>
+          <ul class="mt-2 space-y-2 text-slate-700 list-disc list-inside">
+            <li>Dokumente prüfen und Vorbescheide erzeugen</li>
+            <li>Formulare vorausfüllen, Medienbrüche vermeiden</li>
+            <li>Argumente strukturieren und Faktenprüfungen vorschlagen</li>
+          </ul>
         </div>
-    </section>
-
-    <!-- Emotional Section -->
-    <section id="emotions" class="emotions">
-        <div class="container">
-            <div class="section-header">
-                <h2>Die emotionale Kraft der Veränderung</h2>
-                <p>Sehen Sie, wie KI und Blockchain nicht nur Prozesse, sondern Leben verändern</p>
-            </div>
-            
-            <div class="emotions-grid">
-                <div class="emotion-card">
-                    <div class="emotion-image" style="background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
-                    <div class="emotion-content">
-                        <h3>Familien-Zeit zurückgewinnen</h3>
-                        <p>Statt stundenlang in Ämtern zu warten, verbringen Familien wieder Zeit miteinander. KI und Blockchain geben uns die kostbarste Ressource zurück: Zeit für das, was wirklich zählt.</p>
-                        <div class="emotion-stats">
-                            <span><strong>85%</strong> weniger Wartezeiten</span>
-                            <span><strong>3 Stunden</strong> mehr Familienzeit pro Woche</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="emotion-card">
-                    <div class="emotion-image" style="background-image: url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
-                    <div class="emotion-content">
-                        <h3>Träume verwirklichen</h3>
-                        <p>Junge Unternehmer können ihre Ideen in 24 Stunden statt in 6 Monaten umsetzen. KI und Blockchain machen aus Träumen Realität - schneller, fairer, transparenter.</p>
-                        <div class="emotion-stats">
-                            <span><strong>90%</strong> mehr Gründungen</span>
-                            <span><strong>50.000</strong> neue Arbeitsplätze</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="emotion-card">
-                    <div class="emotion-image" style="background-image: url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80')"></div>
-                    <div class="emotion-content">
-                        <h3>Vertrauen wiederherstellen</h3>
-                        <p>Durch transparente Blockchain-Technologie wissen Bürger wieder, wohin ihre Steuern fließen. Jeder Cent wird nachvollziehbar und fälschungssicher dokumentiert.</p>
-                        <div class="emotion-stats">
-                            <span><strong>100%</strong> Transparenz</span>
-                            <span><strong>0</strong> Korruption möglich</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="emotion-card">
-                    <div class="emotion-image" style="background-image: url('https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80')"></div>
-                    <div class="emotion-content">
-                        <h3>Zukunft für unsere Kinder</h3>
-                        <p>Deutschland wird zum digitalen Vorreiter. Unsere Kinder erben ein Land, das Innovation statt Bürokratie, Chancen statt Hindernisse bietet.</p>
-                        <div class="emotion-stats">
-                            <span><strong>#1</strong> Digitalisierung weltweit</span>
-                            <span><strong>100%</strong> Zukunftssicher</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="emotion-card">
-                    <div class="emotion-image" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80')"></div>
-                    <div class="emotion-content">
-                        <h3>Senioren digital einbinden</h3>
-                        <p>Ältere Menschen werden durch benutzerfreundliche KI-Systeme digital eingebunden. Komplexe Prozesse werden automatisiert und zugänglich gemacht.</p>
-                        <div class="emotion-stats">
-                            <span><strong>95%</strong> einfachere Bedienung</span>
-                            <span><strong>24/7</strong> Unterstützung verfügbar</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="emotion-card">
-                    <div class="emotion-image" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80')"></div>
-                    <div class="emotion-content">
-                        <h3>Gemeinsam stärker</h3>
-                        <p>Durch KI und Blockchain arbeiten Menschen und Maschinen zusammen. Jeder profitiert von der kollektiven Intelligenz und Effizienz.</p>
-                        <div class="emotion-stats">
-                            <span><strong>200%</strong> höhere Produktivität</span>
-                            <span><strong>0</strong> menschliche Fehler</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="rounded-xl border p-6 hover:shadow-xl transition">
+          <h3 class="text-lg font-semibold">ZK‑Abstimmung</h3>
+          <ul class="mt-2 space-y-2 text-slate-700 list-disc list-inside">
+            <li>Wahlgeheimnis mit Zero‑Knowledge</li>
+            <li>Öffentlich prüfbarer Stimmnachweis</li>
+            <li>Angepasstes <a class="underline decoration-emerald-500 underline-offset-2" href="https://docs.rarimo.com/freedom-tool/" target="_blank" rel="noreferrer">Rarimo Freedom Tool</a> für ZK‑Pässe</li>
+          </ul>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Die European Digital Party</h2>
-                    <p>
-                        Wir sind eine neue politische Partei, die sich der Modernisierung Deutschlands durch innovative Technologien verschrieben hat. 
-                        Unsere erste Initiative: Eine Volksabstimmung über die Transformation der deutschen Bürokratie durch <strong>Deregulierung, KI und Blockchain</strong>.
-                    </p>
-                    <div class="stats">
-                        <div class="stat">
-                            <h3>100%</h3>
-                            <p>Transparent</p>
-                        </div>
-                        <div class="stat">
-                            <h3>Digital</h3>
-                            <p>Zukunft</p>
-                        </div>
-                        <div class="stat">
-                            <h3>Deutschland</h3>
-                            <p>Erst</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="tech-stack">
-                        <div class="tech-item">
-                            <i class="fas fa-scissors"></i>
-                            <span>Deregulierung</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fas fa-robot"></i>
-                            <span>KI</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fas fa-link"></i>
-                            <span>Blockchain</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fas fa-vote-yea"></i>
-                            <span>Demokratie</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fas fa-flag"></i>
-                            <span>Deutschland</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="rounded-xl border p-6 hover:shadow-xl transition">
+          <h3 class="text-lg font-semibold">Prüf‑Blockchain</h3>
+          <ul class="mt-2 space-y-2 text-slate-700 list-disc list-inside">
+            <li>Unveränderliche Protokolle (nur schreiben)</li>
+            <li>Behördenverbund: genehmigt und föderiert</li>
+            <li>DSGVO‑konforme Trennung: Identität ≠ Stimme</li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Success Timeline Section -->
-    <section id="success-timeline" class="success-timeline">
-        <div class="container">
-            <div class="section-header">
-                <h2>Was passiert nach einer erfolgreichen Abstimmung?</h2>
-                <p>Der konkrete Fahrplan zur Umsetzung: Von der Abstimmung bis zur vollständigen Digitalisierung Deutschlands</p>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-vote-yea"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-image" style="background-image: url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
-                        <h3>Phase 1: Sofortige Umsetzung (0-6 Monate)</h3>
-                        <div class="timeline-details">
-                            <h4>🎯 Erste Erfolge</h4>
-                            <ul>
-                                <li><strong>Woche 1-4:</strong> Gründung der Digitalisierungsbehörde mit KI-Experten</li>
-                                <li><strong>Monat 1:</strong> KI-Analyse aller bestehenden Vorschriften beginnt</li>
-                                <li><strong>Monat 2:</strong> Pilotprojekte in 5 Bundesländern starten</li>
-                                <li><strong>Monat 3:</strong> Erste Deregulierungsmaßnahmen werden umgesetzt</li>
-                                <li><strong>Monat 6:</strong> 50% aller Anträge können digital eingereicht werden</li>
-                            </ul>
-                            <div class="impact-stats">
-                                <span><strong>1.000.000</strong> Bürger profitieren sofort</span>
-                                <span><strong>85%</strong> weniger Wartezeiten</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-image" style="background-image: url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
-                        <h3>Phase 2: Vollständige Digitalisierung (6-18 Monate)</h3>
-                        <div class="timeline-details">
-                            <h4>🚀 Revolutionäre Veränderungen</h4>
-                            <ul>
-                                <li><strong>Monat 7-12:</strong> Blockchain-Infrastruktur wird bundesweit aufgebaut</li>
-                                <li><strong>Monat 8:</strong> Systematische Deregulierung: 30% der Vorschriften werden vereinfacht</li>
-                                <li><strong>Monat 9:</strong> KI-Systeme übernehmen 80% aller Verwaltungsaufgaben</li>
-                                <li><strong>Monat 12:</strong> Alle Behörden sind vollständig digital vernetzt</li>
-                                <li><strong>Monat 18:</strong> Deutschland wird zum digitalen Vorreiter Europas</li>
-                            </ul>
-                            <div class="impact-stats">
-                                <span><strong>50.000</strong> neue Arbeitsplätze im Tech-Sektor</span>
-                                <span><strong>€15 Milliarden</strong> jährliche Einsparungen</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-image" style="background-image: url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80')"></div>
-                        <h3>Phase 3: Internationale Führungsrolle (18-36 Monate)</h3>
-                        <div class="timeline-details">
-                            <h4>🌍 Deutschland als Vorbild</h4>
-                            <ul>
-                                <li><strong>Monat 19-24:</strong> Andere EU-Länder übernehmen deutsche Standards</li>
-                                <li><strong>Monat 25:</strong> Deutsche KI-Systeme werden weltweit exportiert</li>
-                                <li><strong>Monat 30:</strong> Deutschland führt die globale Digitalisierung an</li>
-                                <li><strong>Monat 36:</strong> Vollständige Transformation abgeschlossen</li>
-                            </ul>
-                            <div class="impact-stats">
-                                <span><strong>#1</strong> Digitalisierung weltweit</span>
-                                <span><strong>€50 Milliarden</strong> Exporte im Tech-Sektor</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Abstimmungen -->
+  <section id="abstimmungen" class="scroll-mt-24 py-16 md:py-24 bg-slate-50">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Digitale Volksabstimmungen auf allen Ebenen</h2>
+      <p class="mt-3 text-slate-700">Gemeinde, Land, Bund und EU: rechtssichere, anonyme und überprüfbare Abstimmungen. Kernbaustein ist ein angepasster <a class="underline decoration-emerald-500 underline-offset-2" href="https://docs.rarimo.com/freedom-tool/" target="_blank" rel="noreferrer">Rarimo Freedom Tool</a>‑ZK‑Pass für Stimmberechtigte.</p>
+      <div class="grid gap-6 md:grid-cols-3 mt-8">
+        <div class="rounded-xl border p-6 bg-white">
+          <h3 class="text-lg font-semibold">Identität</h3>
+          <p class="mt-2 text-slate-700">Nach eIDAS/Online‑Ausweis lokal geprüft; ausstellende Stelle sieht keine Stimmabgabe.</p>
         </div>
-    </section>
-
-    <!-- Concrete Benefits Section -->
-    <section id="concrete-benefits" class="concrete-benefits">
-        <div class="container">
-            <div class="section-header">
-                <h2>Konkrete Vorteile für jeden Bürger</h2>
-                <p>Was Sie persönlich von der digitalen Transformation haben werden</p>
-            </div>
-            
-            <div class="benefits-grid">
-                <div class="benefit-category">
-                    <h3><i class="fas fa-users"></i> Für Familien</h3>
-                    <div class="benefit-items">
-                        <div class="benefit-item">
-                            <div class="benefit-image" style="background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
-                            <div class="benefit-content">
-                                <h4>Zeit für das Wichtigste</h4>
-                                <p>Statt stundenlang in Ämtern zu warten, verbringen Sie Zeit mit Ihrer Familie. KI erledigt alle Behördengänge automatisch.</p>
-                                <div class="benefit-metrics">
-                                    <span><strong>3 Stunden</strong> mehr Familienzeit pro Woche</span>
-                                    <span><strong>0</strong> Behördengänge nötig</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="benefit-category">
-                    <h3><i class="fas fa-graduation-cap"></i> Für Studenten</h3>
-                    <div class="benefit-items">
-                        <div class="benefit-item">
-                            <div class="benefit-image" style="background-image: url('https://images.unsplash.com/photo-1523240794102-9ebd0b167f3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
-                            <div class="benefit-content">
-                                <h4>Studienplatz in Sekunden</h4>
-                                <p>Keine Wartezeiten mehr für Studienplätze. KI vergibt Plätze fair und transparent in Echtzeit.</p>
-                                <div class="benefit-metrics">
-                                    <span><strong>Sofort</strong> Studienplatzvergabe</span>
-                                    <span><strong>100%</strong> Transparenz</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="benefit-category">
-                    <h3><i class="fas fa-briefcase"></i> Für Arbeitnehmer</h3>
-                    <div class="benefit-items">
-                        <div class="benefit-item">
-                            <div class="benefit-image" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
-                            <div class="benefit-content">
-                                <h4>Arbeitslosengeld sofort</h4>
-                                <p>Bei Jobverlust erhalten Sie Arbeitslosengeld automatisch und sofort. Keine Wartezeiten, keine Formulare.</p>
-                                <div class="benefit-metrics">
-                                    <span><strong>Sofort</strong> Auszahlung</span>
-                                    <span><strong>0</strong> Formulare nötig</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="benefit-category">
-                    <h3><i class="fas fa-heart"></i> Für Senioren</h3>
-                    <div class="benefit-items">
-                        <div class="benefit-item">
-                            <div class="benefit-image" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80')"></div>
-                            <div class="benefit-content">
-                                <h4>Einfache Bedienung</h4>
-                                <p>KI-Systeme sind so benutzerfreundlich, dass jeder sie bedienen kann. 24/7 Unterstützung inklusive.</p>
-                                <div class="benefit-metrics">
-                                    <span><strong>95%</strong> einfachere Bedienung</span>
-                                    <span><strong>24/7</strong> Unterstützung</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="benefit-category">
-                    <h3><i class="fas fa-building"></i> Für Unternehmer</h3>
-                    <div class="benefit-items">
-                        <div class="benefit-item">
-                            <div class="benefit-image" style="background-image: url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
-                            <div class="benefit-content">
-                                <h4>Unternehmensgründung in 24h</h4>
-                                <p>Gründen Sie Ihr Unternehmen in 24 Stunden statt in 6 Monaten. KI erledigt alle Formalitäten automatisch.</p>
-                                <div class="benefit-metrics">
-                                    <span><strong>24 Stunden</strong> Gründungszeit</span>
-                                    <span><strong>90%</strong> weniger Kosten</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="benefit-category">
-                    <h3><i class="fas fa-child"></i> Für Kinder</h3>
-                    <div class="benefit-items">
-                        <div class="benefit-item">
-                            <div class="benefit-image" style="background-image: url('https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80')"></div>
-                            <div class="benefit-content">
-                                <h4>Zukunftssichere Ausbildung</h4>
-                                <p>Ihre Kinder erben ein digitales Deutschland. Sie lernen von klein auf mit KI und Blockchain zu arbeiten.</p>
-                                <div class="benefit-metrics">
-                                    <span><strong>100%</strong> Zukunftssicher</span>
-                                    <span><strong>#1</strong> Bildung weltweit</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="rounded-xl border p-6 bg-white">
+          <h3 class="text-lg font-semibold">Abstimmung</h3>
+          <p class="mt-2 text-slate-700">ZK‑Beweis: Stimme gültig, Identität verborgen; barrierearme Oberfläche.</p>
         </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="join" class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Bereit für Deutschlands digitale Zukunft?</h2>
-                <p>Stimmen Sie JA für eine Volksabstimmung über <strong>Deregulierung, KI und Blockchain</strong> zur Modernisierung der deutschen Bürokratie. Ihre Stimme entscheidet über die Zukunft unseres Landes.</p>
-                <div class="cta-buttons">
-                    <a href="#vote" class="btn btn-primary">Jetzt abstimmen</a>
-                    <a href="#initiative" class="btn btn-outline">Mehr erfahren</a>
-                </div>
-            </div>
+        <div class="rounded-xl border p-6 bg-white">
+          <h3 class="text-lg font-semibold">Prüfung</h3>
+          <p class="mt-2 text-slate-700">Öffentlich prüfbarer Nachweis auf einer genehmigten Blockchain; Beobachtung ohne Personenbezug.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Voting Section -->
-    <section id="vote" class="voting">
-        <div class="container">
-            <div class="voting-content">
-                <h2>Volksabstimmung: Deregulierung, KI und Blockchain für Deutschland</h2>
-                <div class="referendum-text">
-                    <h3>Vom Bürokratie-Problem zum Standortvorteil: <strong>Deregulierung, KI und Blockchain</strong> läuten ein neues Zeitalter für Deutschland ein</h3>
-                    
-                    <p>Deutschland ist bekannt für seine gründliche, aber auch lähmende Bürokratie. Was bisher als großer Wettbewerbsnachteil galt – endlose Formulare, komplexe Regeln und mühsame Prozesse – könnte nun zur größten Chance für unser Land werden. Denn genau diese Überregulierung kann mit Hilfe innovativer Technologien wie Künstlicher Intelligenz (KI) und Blockchain in einen einzigartigen Standortvorteil verwandelt werden.</p>
-                    
-                    <p>Stellen Sie sich vor: Deutschland ist das erste Land, das seine komplizierte Gesetzeslandschaft vollständig digitalisiert und automatisiert. Anstatt wie bisher in Papierbergen zu ersticken, entstehen klare, schnelle und gerechte Abläufe, die Bürger, Unternehmen und Behörden gleichermaßen entlasten und stärken. Deutschland könnte weltweit zum Vorbild für intelligente Verwaltung und rechtsstaatliche Innovation werden.</p>
-                    
-                    <h4>Warum wird die heutige Bürokratie mit Deregulierung, KI und Blockchain zum Wettbewerbsvorteil?</h4>
-                    <p>Durch <strong>systematische Deregulierung</strong> und die präzise digitale Übersetzung bestehender Vorschriften in eindeutige und automatisch anwendbare Regeln könnten sich deutsche Unternehmen enorme Vorteile sichern. Die intelligente Vereinfachung von Vorschriften kombiniert mit müheloser Einhaltung reduziert Kosten, beschleunigt Genehmigungen und schafft Rechtssicherheit, die Unternehmen aus aller Welt nach Deutschland zieht.</p>
-                    
-                    <h4>Welche Rolle spielt die Deregulierung dabei?</h4>
-                    <p><strong>Intelligente Deregulierung</strong> bedeutet nicht weniger Regeln, sondern bessere Regeln. KI-Systeme analysieren alle bestehenden Vorschriften und identifizieren automatisch überflüssige, widersprüchliche oder veraltete Regelungen. Diese werden systematisch entfernt oder vereinfacht, während sinnvolle und notwendige Regeln erhalten bleiben. Das Ergebnis: Eine schlanke, effiziente und verständliche Rechtslandschaft.</p>
-                    
-                    <h4>Welche Rolle spielt die Blockchain dabei?</h4>
-                    <p>Blockchain-Technologie bietet eine transparente und absolut sichere Speicherung aller Vorgänge. Jeder Verwaltungsakt wird nachvollziehbar und fälschungssicher dokumentiert. Das schafft Vertrauen, verhindert Betrug und Manipulation und stärkt Deutschlands Ruf als Standort mit höchster Integrität und Zuverlässigkeit.</p>
-                    
-                    <h4>Warum KI den entscheidenden Unterschied macht:</h4>
-                    <p>Eine neutrale und leistungsfähige KI überwacht automatisch und gerecht die Einhaltung der Vorschriften. Sie erkennt Unregelmäßigkeiten sofort, reduziert menschliche Fehler und verhindert Willkür. Dies schafft Vertrauen und Fairness – sowohl bei Bürgern als auch bei internationalen Investoren.</p>
-                    
-                    <h4>Ein neues Zeitalter für Deutschland:</h4>
-                    <p>Mit dieser technologischen Revolution könnte Deutschland weltweit Vorreiter und Vorbild werden – ein Land, das es schafft, seine größte Schwäche in die größte Stärke zu verwandeln. Innovation statt Stillstand, Klarheit statt Bürokratie-Chaos – Deutschland könnte zu einer der fortschrittlichsten Gesellschaften der Welt aufsteigen.</p>
-                    
-                    <h4>Warum dies das Wichtigste für Deutschlands Zukunft ist:</h4>
-                    <p>Nur wenn wir jetzt den Mut haben, unsere Verwaltung radikal zu modernisieren, sichern wir langfristig Wohlstand, Wettbewerbsfähigkeit und Lebensqualität für kommende Generationen. Die <strong>Dreifach-Kombination aus Deregulierung, KI und Blockchain</strong> ist nicht nur eine Chance, sondern die entscheidende Voraussetzung dafür, dass Deutschland im globalen Wettbewerb eine Führungsrolle einnimmt und für Bürger und Unternehmen attraktiv bleibt.</p>
-                </div>
-                
-                <div class="voting-form">
-                    <h3>Digitale Identitätsverifizierung für Ihre Stimme</h3>
-                    <p>Um die Integrität der Volksabstimmung zu gewährleisten, verwenden wir sichere digitale Identitätsnachweise, die in Deutschland anerkannt sind.</p>
-                    
-                    <div class="identity-verification">
-                        <div class="identity-methods">
-                            <h4>Wählen Sie Ihre Identitätsverifizierung:</h4>
-                            
-                            <div class="identity-option" onclick="selectIdentityMethod('zkpassport')">
-                                <div class="identity-icon">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <div class="identity-details">
-                                    <h5>Rarimo ZK Passport</h5>
-                                    <p>Zero-Knowledge Passport-Verifizierung mit maximaler Privatsphäre</p>
-                                    <span class="identity-badge">Revolutionär & Sicher</span>
-                                </div>
-                                <div class="identity-check">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                            </div>
-
-                            <div class="identity-option" onclick="selectIdentityMethod('npa')">
-                                <div class="identity-icon">
-                                    <i class="fas fa-id-card"></i>
-                                </div>
-                                <div class="identity-details">
-                                    <h5>Online-Ausweisfunktion (nPA)</h5>
-                                    <p>Verwenden Sie Ihren Personalausweis mit Online-Ausweisfunktion</p>
-                                    <span class="identity-badge">Offiziell anerkannt</span>
-                                </div>
-                                <div class="identity-check">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                            </div>
-                            
-                            <div class="identity-option" onclick="selectIdentityMethod('eid')">
-                                <div class="identity-icon">
-                                    <i class="fas fa-mobile-alt"></i>
-                                </div>
-                                <div class="identity-details">
-                                    <h5>eID-Identität</h5>
-                                    <p>Digitale Identität über eID-System</p>
-                                    <span class="identity-badge">eIDAS-konform</span>
-                                </div>
-                                <div class="identity-check">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                            </div>
-                            
-                            <div class="identity-option" onclick="selectIdentityMethod('bundid')">
-                                <div class="identity-icon">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <div class="identity-details">
-                                    <h5>BundID</h5>
-                                    <p>Digitale Identität der Bundesregierung</p>
-                                    <span class="identity-badge">Bundesweit gültig</span>
-                                </div>
-                                <div class="identity-check">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                            </div>
-                            
-                            <div class="identity-option" onclick="selectIdentityMethod('video')">
-                                <div class="identity-icon">
-                                    <i class="fas fa-video"></i>
-                                </div>
-                                <div class="identity-details">
-                                    <h5>Video-Identifikation</h5>
-                                    <p>Live-Videoidentifikation mit Ausweisdokument</p>
-                                    <span class="identity-badge">Sofort verfügbar</span>
-                                </div>
-                                <div class="identity-check">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div id="verification-process" class="verification-process" style="display: none;">
-                            <div class="verification-header">
-                                <h4>Identitätsverifizierung läuft...</h4>
-                                <div class="verification-progress">
-                                    <div class="progress-bar">
-                                        <div class="progress" id="verificationProgress"></div>
-                                    </div>
-                                    <span id="verificationStatus">Verbindung wird hergestellt...</span>
-                                </div>
-                            </div>
-                            
-                            <div class="verification-steps">
-                                <div class="verification-step" id="step1">
-                                    <i class="fas fa-link"></i>
-                                    <span>Verbindung herstellen</span>
-                                </div>
-                                <div class="verification-step" id="step2">
-                                    <i class="fas fa-user-check"></i>
-                                    <span>Identität prüfen</span>
-                                </div>
-                                <div class="verification-step" id="step3">
-                                    <i class="fas fa-shield-alt"></i>
-                                    <span>Sicherheit validieren</span>
-                                </div>
-                                <div class="verification-step" id="step4">
-                                    <i class="fas fa-check-circle"></i>
-                                    <span>Verifizierung abgeschlossen</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div id="voting-interface" class="voting-interface" style="display: none;">
-                            <div class="voter-info">
-                                <h4>Willkommen, <span id="voterName">Bürger</span>!</h4>
-                                <p>Ihre Identität wurde erfolgreich verifiziert. Sie können jetzt an der Volksabstimmung teilnehmen.</p>
-                                <div class="voter-details">
-                                    <span><i class="fas fa-calendar"></i> Geboren: <span id="voterBirth">--</span></span>
-                                    <span><i class="fas fa-map-marker-alt"></i> Wohnort: <span id="voterLocation">--</span></span>
-                                    <span><i class="fas fa-id-badge"></i> Verifiziert mit: <span id="verificationMethod">--</span></span>
-                                </div>
-                            </div>
-                            
-                            <div class="vote-buttons">
-                                <button class="btn btn-success" onclick="submitVote('ja')">
-                                    <i class="fas fa-check"></i>
-                                    JA - Für KI und Blockchain
-                                </button>
-                                <button class="btn btn-danger" onclick="submitVote('nein')">
-                                    <i class="fas fa-times"></i>
-                                    NEIN - Status quo beibehalten
-                                </button>
-                            </div>
-                            
-                            <div class="vote-security">
-                                <p><i class="fas fa-lock"></i> Ihre Stimme wird verschlüsselt und anonymisiert gespeichert. Nur das Ergebnis wird veröffentlicht.</p>
-                                <p><i class="fas fa-shield-alt"></i> Diese Abstimmung entspricht den deutschen Datenschutzrichtlinien (DSGVO) und Wahlgesetzen.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <p class="vote-note">Deutschland braucht jetzt Ihre Stimme, um endlich das Zeitalter der intelligenten, gerechten und zukunftsfähigen Verwaltung einzuläuten. Ihre Zustimmung entscheidet über die Zukunft unseres Landes – für Sie, Ihre Familie und kommende Generationen.</p>
-                </div>
-            </div>
+  <!-- Programm -->
+  <section id="programm" class="scroll-mt-24 py-16 md:py-24 bg-slate-50">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mb-8 flex items-end justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-bold tracking-tight text-slate-900">Programm in 9 Punkten</h2>
+          <p class="mt-3 text-slate-700">Konsequent. Messbar. Bürgernah.</p>
         </div>
-    </section>
+        <span class="inline-flex items-center rounded-md border px-2 py-1 text-xs text-slate-600">Version 1.0 (lebendes Dokument)</span>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">1. Ein Verfahren, ein Konto</h3><p class="text-slate-700 mt-2">Ein Portal mit einheitlichem Status‑Verlauf</p></div>
+        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">2. 180‑Tage‑Garantie</h3><p class="text-slate-700 mt-2">Klare Fristen: Wird die Frist überschritten, gilt der Antrag als genehmigt</p></div>
+        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">3. Gesetze in Klartext</h3><p class="text-slate-700 mt-2">Verbindliche Leichte‑Sprache‑Fassungen mit Rechtswirkung</p></div>
+        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">4. Daten nur einmal</h3><p class="text-slate-700 mt-2">Once‑Only‑Prinzip, Register statt Upload‑Hürden</p></div>
+        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">5. Offene Regeln</h3><p class="text-slate-700 mt-2">Maschinenlesbare Verordnungen und öffentliche Testfälle</p></div>
+        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">6. Volksabstimmungen digital</h3><p class="text-slate-700 mt-2">Gemeinde, Land, Bund, EU: ZK‑Abstimmungen mit angepasstem Rarimo Freedom Tool</p></div>
+        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">7. Faires Nachverfolgen</h3><p class="text-slate-700 mt-2">Transparenz‑Tafeln: Wartezeiten, Rückstände, Qualität</p></div>
+        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">8. KI in der Verwaltung</h3><p class="text-slate-700 mt-2">Assistenten für Sachbearbeitung – Kontrolle bleibt beim Menschen</p></div>
+        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">9. Prüf‑Spur</h3><p class="text-slate-700 mt-2">Jeder Verwaltungsakt unveränderlich protokolliert</p></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Party Launch Banner (Less Prominent) -->
-    <section id="party-launch" class="party-launch-banner compact">
-        <div class="banner-background">
-            <div class="banner-image" style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
-            <div class="banner-overlay"></div>
+  <!-- Fahrplan -->
+  <section id="fahrplan" class="scroll-mt-24 py-16 md:py-24 bg-white">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Fahrplan (36 Monate)</h2>
+      <div class="mt-6">
+        <div class="flex gap-2" role="tablist">
+          <button class="tab-trigger active" data-tab="phase1">Phase 1</button>
+          <button class="tab-trigger" data-tab="phase2">Phase 2</button>
+          <button class="tab-trigger" data-tab="phase3">Phase 3</button>
         </div>
-        <div class="container">
-            <div class="banner-content">
-                <div class="banner-badge">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span>14. September 2025</span>
-                </div>
-                <h2 class="banner-title">
-                    🎉 <span class="highlight">Parteigründung</span> im Schloss
-                </h2>
-                <p class="banner-subtitle">
-                    Die European Digital Party wird offiziell im historischen Schloss ??? gegründet. 
-                    Ein historischer Moment für Deutschlands digitale Zukunft!
-                </p>
-                <div class="banner-details">
-                    <div class="banner-detail">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Schloss ????</span>
-                    </div>
-                    <div class="banner-detail">
-                        <i class="fas fa-clock"></i>
-                        <span>14:00 - 22:00 Uhr</span>
-                    </div>
-                    <div class="banner-detail">
-                        <i class="fas fa-users"></i>
-                        <span>Exklusive Veranstaltung für 200 Gäste</span>
-                    </div>
-                </div>
-                <div class="banner-buttons">
-                    <a href="#rsvp" class="btn btn-primary">
-                        <i class="fas fa-ticket-alt"></i>
-                        Jetzt anmelden
-                    </a>
-                    <a href="#program" class="btn btn-outline">
-                        <i class="fas fa-list"></i>
-                        Programm ansehen
-                    </a>
-                </div>
-                <div class="banner-countdown">
-                    <div class="countdown-item">
-                        <span id="countdown-days">00</span>
-                        <label>Tage</label>
-                    </div>
-                    <div class="countdown-item">
-                        <span id="countdown-hours">00</span>
-                        <label>Stunden</label>
-                    </div>
-                    <div class="countdown-item">
-                        <span id="countdown-minutes">00</span>
-                        <label>Minuten</label>
-                    </div>
-                    <div class="countdown-item">
-                        <span id="countdown-seconds">00</span>
-                        <label>Sekunden</label>
-                    </div>
-                </div>
+        <div class="mt-4">
+          <div class="tab-content" id="phase1">
+            <div class="grid gap-6 md:grid-cols-3">
+              <div class="rounded-xl border p-6"><h3 class="font-semibold">Digitale Basis</h3><p class="text-slate-700 mt-2">Registerabgleich, eID‑Login, Akten‑Digitalisierung</p></div>
+              <div class="rounded-xl border p-6"><h3 class="font-semibold">Pilotkommunen</h3><p class="text-slate-700 mt-2">3–5 Städte, standardisierte Prozesse</p></div>
+              <div class="rounded-xl border p-6"><h3 class="font-semibold">Öffentliche Prüfungen</h3><p class="text-slate-707 mt-2">Externe Prüfpfade und Fehler‑Prämien (Bug‑Bounties)</p></div>
             </div>
+          </div>
+          <div class="tab-content hidden" id="phase2">
+            <div class="grid gap-6 md:grid-cols-3">
+              <div class="rounded-xl border p-6"><h3 class="font-semibold">KI‑Rollout</h3><p class="text-slate-700 mt-2">Dokumenten‑Erkennung, Validierung, Assistenz</p></div>
+              <div class="rounded-xl border p-6"><h3 class="font-semibold">ZK‑Abstimmung</h3><p class="text-slate-700 mt-2">Gemeinde‑Referenden mit Prüf‑Spur</p></div>
+              <div class="rounded-xl border p-6"><h3 class="font-semibold">RegTech‑Paket</h3><p class="text-slate-700 mt-2">Maschinenlesbare Normen plus Testfälle</p></div>
+            </div>
+          </div>
+          <div class="tab-content hidden" id="phase3">
+            <div class="grid gap-6 md:grid-cols-3">
+              <div class="rounded-xl border p-6"><h3 class="font-semibold">Skalierung</h3><p class="text-slate-700 mt-2">Bund/Länder/Europa – föderierte Ketten</p></div>
+              <div class="rounded-xl border p-6"><h3 class="font-semibold">Dienstleistungsziele</h3><p class="text-slate-700 mt-2">Ziele und Ergebnis‑Kennzahlen gesetzlich</p></div>
+              <div class="rounded-xl border p-6"><h3 class="font-semibold">Export‑Modell</h3><p class="text-slate-700 mt-2">Gute Praxis international teilen</p></div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-vote-yea"></i>
-                        <span>European Digital Party</span>
-                    </div>
-                    <p>Die Zukunft der deutschen Demokratie durch innovative Technologien.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Partei</h4>
-                    <ul>
-                        <li><a href="#initiative">Volksabstimmung</a></li>
-                        <li><a href="#examples">Beispiele</a></li>
-                        <li><a href="#emotions">Emotionen</a></li>
-                        <li><a href="pages/about.html">Über uns</a></li>
-                        <li><a href="#vote">Abstimmen</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Initiative</h4>
-                    <ul>
-                        <li><a href="pages/bureaucracy-crisis.html">Bürokratiekrise</a></li>
-                        <li><a href="pages/wissenschaftliche-begruendung.html">Wissenschaft</a></li>
-                        <li><a href="pages/direkte-demokratie.html">Direkte Demokratie</a></li>
-                        <li><a href="#concrete-benefits">Vorteile</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Rechtliches</h4>
-                    <ul>
-                        <li><a href="pages/privacy.html">Datenschutz</a></li>
-                        <li><a href="pages/imprint.html">Impressum</a></li>
-                        <li><a href="pages/terms.html">AGB</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 European Digital Party. Alle Rechte vorbehalten.</p>
-            </div>
+  <!-- Quellen -->
+  <section id="quellen" class="scroll-mt-24 py-16 md:py-24 bg-slate-50">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">Quellen & weiterführende Informationen</h2>
+        <p class="mt-3 text-slate-700">Ausgewählte Primärquellen mit stabilen Permalinks – für alle, die tiefer einsteigen möchten.</p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="rounded-xl border p-6 bg-white">
+          <h3 class="font-semibold">Digitale Verwaltung & E‑Government</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-800 list-disc list-inside">
+            <li><a class="hover:underline" href="https://www.oecd.org/en/publications/government-at-a-glance-2023_3d5c5d31-en.html" target="_blank" rel="noreferrer">OECD – Government at a Glance 2023</a></li>
+            <li><a class="hover:underline" href="https://www.oecd.org/en/data/dashboards/government-at-a-glance-2023.html" target="_blank" rel="noreferrer">OECD – Daten‑Dashboard</a></li>
+            <li><a class="hover:underline" href="https://publicadministration.un.org/egovkb/en-us/Reports/UN-E-Government-Survey-2024" target="_blank" rel="noreferrer">UN DESA – E‑Government Survey 2024 (Landing)</a></li>
+            <li><a class="hover:underline" href="https://desapublications.un.org/sites/default/files/publications/2024-09/%28Web%20version%29%20E-Government%20Survey%202024%201392024.pdf" target="_blank" rel="noreferrer">UN DESA – E‑Government Survey 2024 (PDF)</a></li>
+          </ul>
         </div>
-    </footer>
+        <div class="rounded-xl border p-6 bg-white">
+          <h3 class="font-semibold">Rechtlicher Rahmen (EU‑Identität & Signaturen)</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-800 list-disc list-inside">
+            <li><a class="hover:underline" href="https://eur-lex.europa.eu/eli/reg/2014/910/oj/eng" target="_blank" rel="noreferrer">EUR‑Lex – Verordnung (EU) 910/2014 (eIDAS)</a></li>
+            <li><a class="hover:underline" href="https://eur-lex.europa.eu/eli/reg/2014/910/2024-10-18/eng" target="_blank" rel="noreferrer">EUR‑Lex – Konsolidierte Fassung (Stand: 18.10.2024)</a></li>
+            <li><a class="hover:underline" href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/european-digital-identity_en" target="_blank" rel="noreferrer">Europäische Digitale Identität – Überblick</a></li>
+            <li><a class="hover:underline" href="https://ec.europa.eu/digital-building-blocks/sites/display/EUDIGITALIDENTITYWALLET/EU%2BDigital%2BIdentity%2BWallet%2BHome" target="_blank" rel="noreferrer">EU Digital Identity Wallet – offizielle Seite</a></li>
+          </ul>
+        </div>
+        <div class="rounded-xl border p-6 bg-white">
+          <h3 class="font-semibold">ZK‑Abstimmungen & Kryptographie</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-800 list-disc list-inside">
+            <li><a class="hover:underline" href="https://arxiv.org/abs/1504.03778" target="_blank" rel="noreferrer">Benaloh et al. – End‑to‑End Verifiability (2015)</a></li>
+            <li><a class="hover:underline" href="https://eprint.iacr.org/2016/260.pdf" target="_blank" rel="noreferrer">Groth 2016 – Pairing‑based SNARK (Groth16)</a></li>
+            <li><a class="hover:underline" href="https://eprint.iacr.org/2019/953.pdf" target="_blank" rel="noreferrer">PLONK 2019 – Universelle SNARK</a></li>
+            <li><a class="hover:underline" href="https://docs.rarimo.com/freedom-tool/" target="_blank" rel="noreferrer">Rarimo – Freedom Tool (Dokumentation)</a></li>
+            <li><a class="hover:underline" href="https://docs.rarimo.com/freedom-tool/smart-contracts-reference/" target="_blank" rel="noreferrer">Rarimo – Smart‑Contract‑Referenz & Deployments</a></li>
+          </ul>
+        </div>
+        <div class="rounded-xl border p-6 bg-white">
+          <h3 class="font-semibold">Register & Prüf‑Blockchain (öffentliche Dienste)</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-800 list-disc list-inside">
+            <li><a class="hover:underline" href="https://digital-strategy.ec.europa.eu/en/policies/european-blockchain-services-infrastructure" target="_blank" rel="noreferrer">EU – European Blockchain Services Infrastructure (EBSI)</a></li>
+            <li><a class="hover:underline" href="https://hub.ebsi.eu/" target="_blank" rel="noreferrer">EBSI – Hub & technische Infos</a></li>
+            <li><a class="hover:underline" href="https://thedocs.worldbank.org/en/doc/784361528484329990-0200022018/original/BlockchainandLandJune2018.pdf" target="_blank" rel="noreferrer">Weltbank – Blockchain and Land (2018, PDF)</a></li>
+          </ul>
+        </div>
+        <div class="rounded-xl border p-6 bg-white">
+          <h3 class="font-semibold">Direkte Demokratie (Schweiz, Praxis)</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-800 list-disc list-inside">
+            <li><a class="hover:underline" href="https://www.ch.ch/en/votes-and-elections/referendum/" target="_blank" rel="noreferrer">ch.ch – Referendum: wie es funktioniert</a></li>
+            <li><a class="hover:underline" href="https://www.ch.ch/en/political-system/political-rights/initiatives/what-is-a-federal-popular-initiative" target="_blank" rel="noreferrer">ch.ch – Volksinitiative: Überblick</a></li>
+            <li><a class="hover:underline" href="https://www.aboutswitzerland.eda.admin.ch/en/direct-democracy" target="_blank" rel="noreferrer">EDA – Direct Democracy (Hintergrund)</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-6 text-xs text-slate-500">Hinweis: Einige Quellen sind englischsprachig. Alle Links sind Permalinks/Primärquellen, soweit verfügbar.</p>
+    </div>
+  </section>
 
-    <script src="scripts/i18n.js"></script>
-    <script src="scripts/script.js"></script>
+  <!-- FAQ -->
+  <section id="faq" class="scroll-mt-24 py-16 md:py-24 bg-white">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Fragen & Antworten</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">Ist das mit dem Grundgesetz vereinbar?</h3><p class="mt-2 text-slate-700">Ja. Direkte Demokratie ist auf Bundes‑/Länderebene gestaltbar. Digitale Verfahren ersetzen nicht Parlamente, sondern ergänzen sie – verfassungskonform mit einfacher/qualifizierter Mehrheit je nach Thema.</p></div>
+        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">Wie schützt ihr die Anonymität?</h3><p class="mt-2 text-slate-700">Stimmabgabe via Zero‑Knowledge‑Beweisen: Die Gültigkeit wird belegt, ohne Identität offenzulegen. Die Prüf‑Spur enthält nur verschlüsselte Belege.</p></div>
+        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">Braucht man dafür Kryptowährungen?</h3><p class="mt-2 text-slate-700">Nein. Wir nutzen genehmigte, energieeffiziente Ketten ohne spekulative Token – ausschließlich für Integrität und Prüfbarkeit.</p></div>
+        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">Wer kontrolliert die KI?</h3><p class="mt-2 text-slate-700">Klare Leitplanken: Offener Quellcode, Protokollierung, menschliche Letztentscheidung, Beschwerdewege, Verzerrungs‑Audits und Auswertung im Nachgang.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt" class="scroll-mt-24 py-16 md:py-24 bg-slate-900 text-slate-100">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-10 md:grid-cols-2">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight">Mitmachen</h2>
+        <p class="mt-3 text-slate-300">Ob Bürgerin, Gemeinde oder Verband – wir bauen Allianzen für praxisnahe Reformen. Wenn Sie das genauso sehen: Schließen Sie sich an. Denn Veränderung beginnt, wenn wir nicht mehr warten.</p>
+        <ul class="mt-4 space-y-3 text-slate-200">
+          <li>• Partner‑Programm für Kommunen</li>
+          <li>• Offener Quellcode & öffentliche Prüfungen</li>
+          <li>• Werkstatt‑Reihen vor Ort</li>
+        </ul>
+        <div class="mt-6 flex gap-3">
+          <a href="mailto:kontakt@europeandigital.party" class="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow hover:bg-slate-100">E‑Mail senden</a>
+          <a href="#quellen" class="inline-flex items-center justify-center rounded-md bg-slate-800 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/10 hover:bg-slate-700">Quellen ansehen</a>
+        </div>
+      </div>
+      <div>
+        <div class="rounded-xl border border-slate-700 bg-white/5 p-6">
+          <h3 class="text-lg font-semibold">Kurznachricht senden</h3>
+          <form class="grid gap-3 mt-3">
+            <div>
+              <label class="block text-sm">Name</label>
+              <input class="mt-1 w-full rounded-md border border-slate-700 bg-slate-800 px-3 py-2 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Vor- und Nachname">
+            </div>
+            <div>
+              <label class="block text-sm">E‑Mail</label>
+              <input type="email" class="mt-1 w-full rounded-md border border-slate-700 bg-slate-800 px-3 py-2 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="name@example.org">
+            </div>
+            <div>
+              <label class="block text-sm">Nachricht</label>
+              <textarea rows="4" class="mt-1 w-full rounded-md border border-slate-700 bg-slate-800 px-3 py-2 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Wie können wir helfen?"></textarea>
+            </div>
+            <button type="button" class="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow hover:bg-slate-100">Nachricht senden</button>
+            <p class="text-xs text-slate-400">* Formular ist eine Demo. Backend‑Anbindung (z. B. API) folgt im Projekt.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fußzeile -->
+  <footer class="border-t bg-white">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-8 py-10 md:grid-cols-4">
+        <div>
+          <div class="inline-flex items-center gap-2 font-semibold text-blue-700">⛭ Europäische Digitalpartei</div>
+          <p class="mt-3 text-sm text-slate-600">Die Zukunft der Demokratie ist überprüfbar, inklusiv und effizient.</p>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-slate-900">Navigation</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-600">
+            <li><a class="hover:text-slate-900" href="#mission">Mission</a></li>
+            <li><a class="hover:text-slate-900" href="#programm">Programm</a></li>
+            <li><a class="hover:text-slate-900" href="#fahrplan">Fahrplan</a></li>
+            <li><a class="hover:text-slate-900" href="#quellen">Quellen</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-slate-900">Rechtliches</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-600">
+            <li><a class="hover:text-slate-900" href="#">Datenschutz</a></li>
+            <li><a class="hover:text-slate-900" href="#">Impressum</a></li>
+            <li><a class="hover:text-slate-900" href="#">Nutzungsbedingungen</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-slate-900">Kontakt</h3>
+          <div class="mt-3 flex gap-2">
+            <a href="mailto:kontakt@europeandigital.party" class="inline-flex items-center gap-2 rounded-md border px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50">E‑Mail</a>
+            <a href="#quellen" class="inline-flex items-center gap-2 rounded-md border px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50">Quellen</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t py-6 text-center text-xs text-slate-500">© <span id="year"></span> Europäische Digitalpartei. Alle Rechte vorbehalten.</div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
-</html> 
+</html>

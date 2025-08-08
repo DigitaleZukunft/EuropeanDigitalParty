@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "Parti Numérique Européen - Référendum pour la Dérégulation, l'IA et la Blockchain",
+    "description": "Le Parti Numérique Européen - Un parti politique moderne pour l'Allemagne. Première initiative : Référendum sur la dérégulation, l'IA et la blockchain pour moderniser la bureaucratie allemande.",
+    "og_title": "Parti Numérique Européen - Référendum pour la Dérégulation, l'IA et la Blockchain",
+    "og_description": "L'avenir de la démocratie allemande : La dérégulation, l'IA et la blockchain transforment la bureaucratie allemande en avantage concurrentiel."
+  },
+  "nav": {
+    "home": "Accueil",
+    "initiative": "Référendum",
+    "examples": "Exemples",
+    "emotions": "Émotions",
+    "timeline": "Calendrier",
+    "benefits": "Avantages",
+    "party_launch": "Lancement du Parti",
+    "bureaucracy_crisis": "Crise Bureaucratique",
+    "science": "Science",
+    "direct_democracy": "Démocratie Directe",
+    "about": "À Propos",
+    "contact": "Contact",
+    "vote_now": "Voter Maintenant"
+  },
+  "hero": {
+    "title": "L'Avenir de la Démocratie Allemande",
+    "subtitle": "Le Parti Numérique Européen vous invite au premier référendum : La dérégulation, l'IA et la blockchain transforment la bureaucratie allemande en avantage concurrentiel.",
+    "learn_more": "En Savoir Plus",
+    "vote_now": "Voter Maintenant",
+    "share": "Partager",
+    "tweet": "Tweeter",
+    "live_results": "Résultats en Direct",
+    "yes_deregulation": "OUI - Dérégulation & IA",
+    "no_status_quo": "NON - Statu quo"
+  },
+  "initiative": {
+    "title": "Notre Premier Référendum",
+    "subtitle": "Du problème bureaucratique à l'avantage concurrentiel : La dérégulation, l'IA et la blockchain annoncent une nouvelle ère pour l'Allemagne",
+    "deregulation": {
+      "title": "Dérégulation Intelligente",
+      "description": "Révision systématique et simplification de toutes les réglementations par analyse IA. Les règles redondantes sont automatiquement identifiées et supprimées, les règles pertinentes sont préservées."
+    },
+    "ai": {
+      "title": "Révolution IA",
+      "description": "Une IA neutre et puissante surveille automatiquement et équitablement le respect des réglementations simplifiées. Elle détecte immédiatement les irrégularités et prévient l'arbitraire."
+    },
+    "blockchain": {
+      "title": "Transparence Blockchain",
+      "description": "La technologie blockchain offre un stockage transparent et absolument sécurisé de tous les processus. Chaque acte administratif est documenté de manière traçable et inviolable."
+    },
+    "advantage": {
+      "title": "Avantage Concurrentiel",
+      "description": "Les entreprises allemandes sécurisent d'énormes avantages grâce au respect sans effort des réglementations. Cela réduit les coûts et accélère les approbations."
+    },
+    "role_model": {
+      "title": "Modèle Mondial",
+      "description": "L'Allemagne devient le premier pays à numériser et automatiser complètement son paysage juridique complexe. Un modèle pour l'administration intelligente."
+    },
+    "legal_security": {
+      "title": "Sécurité Juridique",
+      "description": "La combinaison de dérégulation, d'IA et de blockchain crée une sécurité juridique unique qui attire les entreprises du monde entier vers l'Allemagne."
+    }
+  },
+  "about": {
+    "title": "Le Parti Numérique Européen",
+    "description": "Nous sommes un nouveau parti politique engagé dans la modernisation de l'Allemagne par des technologies innovantes. Notre première initiative : Un référendum sur la transformation de la bureaucratie allemande par la dérégulation, l'IA et la blockchain.",
+    "stats": {
+      "transparent": {
+        "value": "100%",
+        "label": "Transparent"
+      },
+      "digital": {
+        "value": "Numérique",
+        "label": "Avenir"
+      },
+      "germany": {
+        "value": "Allemagne",
+        "label": "Premier"
+      }
+    },
+    "tech_stack": {
+      "deregulation": "Dérégulation",
+      "ai": "IA",
+      "blockchain": "Blockchain",
+      "democracy": "Démocratie",
+      "germany": "Allemagne"
+    }
+  },
+  "timeline": {
+    "title": "Que se passe-t-il après un vote réussi ?",
+    "subtitle": "Le plan d'implémentation concret : Du vote à la numérisation complète de l'Allemagne",
+    "phase1": {
+      "title": "Phase 1 : Implémentation Immédiate (0-6 mois)",
+      "subtitle": "Premiers Succès",
+      "items": [
+        "Semaine 1-4 : Création de l'agence de numérisation avec des experts IA",
+        "Mois 1 : L'analyse IA de toutes les réglementations existantes commence",
+        "Mois 2 : Les projets pilotes commencent dans 5 États fédéraux",
+        "Mois 3 : Les premières mesures de dérégulation sont mises en œuvre",
+        "Mois 6 : 50% de toutes les demandes peuvent être soumises numériquement"
+      ],
+      "stats": [
+        "1 000 000 citoyens bénéficient immédiatement",
+        "85% moins de temps d'attente"
+      ]
+    },
+    "phase2": {
+      "title": "Phase 2 : Numérisation Complète (6-18 mois)",
+      "subtitle": "Changements Révolutionnaires",
+      "items": [
+        "Mois 7-12 : L'infrastructure blockchain est construite à l'échelle nationale",
+        "Mois 8 : Dérégulation systématique : 30% des réglementations sont simplifiées",
+        "Mois 9 : Les systèmes IA prennent en charge 80% de toutes les tâches administratives",
+        "Mois 12 : Toutes les autorités sont entièrement connectées numériquement",
+        "Mois 18 : L'Allemagne devient le pionnier numérique de l'Europe"
+      ],
+      "stats": [
+        "50 000 nouveaux emplois dans le secteur technologique",
+        "15 milliards d'euros d'économies annuelles"
+      ]
+    },
+    "phase3": {
+      "title": "Phase 3 : Leadership International (18-36 mois)",
+      "subtitle": "L'Allemagne comme Modèle",
+      "items": [
+        "Mois 19-24 : D'autres pays de l'UE adoptent les standards allemands",
+        "Mois 25 : Les systèmes IA allemands sont exportés dans le monde entier",
+        "Mois 30 : L'Allemagne mène la numérisation mondiale",
+        "Mois 36 : Transformation complète terminée"
+      ],
+      "stats": [
+        "#1 Numérisation mondiale",
+        "50 milliards d'euros d'exportations dans le secteur technologique"
+      ]
+    }
+  },
+  "benefits": {
+    "title": "Avantages Concrets pour Chaque Citoyen",
+    "subtitle": "Ce que vous gagnerez personnellement de la transformation numérique"
+  },
+  "cta": {
+    "title": "Prêt pour l'Avenir Numérique de l'Allemagne ?",
+    "description": "Votez OUI pour un référendum sur la dérégulation, l'IA et la blockchain pour moderniser la bureaucratie allemande. Votre vote décide de l'avenir de notre pays.",
+    "vote_now": "Voter Maintenant",
+    "learn_more": "En Savoir Plus"
+  },
+  "vote": {
+    "title": "Référendum : Dérégulation, IA et Blockchain pour l'Allemagne",
+    "main_title": "Du problème bureaucratique à l'avantage concurrentiel : La dérégulation, l'IA et la blockchain annoncent une nouvelle ère pour l'Allemagne",
+    "intro": "L'Allemagne est connue pour sa bureaucratie approfondie mais paralysante. Ce qui était auparavant considéré comme un désavantage concurrentiel majeur – formulaires sans fin, règles complexes et processus fastidieux – pourrait maintenant devenir la plus grande opportunité pour notre pays. Car cette sur-réglementation peut être transformée en avantage concurrentiel unique avec l'aide de technologies innovantes telles que l'Intelligence Artificielle (IA) et la blockchain.",
+    "vision": "Imaginez : L'Allemagne est le premier pays à numériser et automatiser complètement son paysage juridique complexe. Au lieu de se noyer dans des montagnes de papier comme avant, des processus clairs, rapides et équitables émergent qui soulagent et renforcent les citoyens, les entreprises et les autorités. L'Allemagne pourrait devenir un modèle mondial pour l'administration intelligente et l'innovation de l'État de droit.",
+    "advantage_title": "Pourquoi la bureaucratie d'aujourd'hui devient-elle un avantage concurrentiel avec la dérégulation, l'IA et la blockchain ?",
+    "advantage_text": "Grâce à la dérégulation systématique et à la traduction numérique précise des réglementations existantes en règles claires et automatiquement applicables, les entreprises allemandes pourraient sécuriser d'énormes avantages. La simplification intelligente des réglementations combinée au respect sans effort réduit les coûts, accélère les approbations et crée une sécurité juridique qui attire les entreprises du monde entier vers l'Allemagne.",
+    "deregulation_title": "Quel rôle joue la dérégulation ?",
+    "deregulation_text": "La dérégulation intelligente ne signifie pas moins de règles, mais de meilleures règles. Les systèmes IA analysent toutes les réglementations existantes et identifient automatiquement les règles redondantes, contradictoires ou obsolètes. Celles-ci sont systématiquement supprimées ou simplifiées, tandis que les règles pertinentes et nécessaires sont préservées. Le résultat : Un paysage juridique maigre, efficace et compréhensible.",
+    "blockchain_title": "Quel rôle joue la blockchain ?",
+    "blockchain_text": "La technologie blockchain offre un stockage transparent et absolument sécurisé de tous les processus. Chaque acte administratif est documenté de manière traçable et inviolable. Cela crée la confiance, prévient la fraude et la manipulation et renforce la réputation de l'Allemagne comme lieu avec la plus haute intégrité et fiabilité.",
+    "ai_title": "Pourquoi l'IA fait la différence décisive :",
+    "ai_text": "Une IA neutre et puissante surveille automatiquement et équitablement le respect des réglementations. Elle détecte immédiatement les irrégularités, réduit les erreurs humaines et prévient l'arbitraire. Cela crée la confiance et l'équité – tant parmi les citoyens que les investisseurs internationaux.",
+    "new_era_title": "Une nouvelle ère pour l'Allemagne :",
+    "new_era_text": "Avec cette révolution technologique, l'Allemagne pourrait devenir un pionnier et un modèle mondial – un pays qui réussit à transformer sa plus grande faiblesse en sa plus grande force. Innovation au lieu de stagnation, clarté au lieu du chaos bureaucratique – l'Allemagne pourrait s'élever pour devenir l'une des sociétés les plus progressistes du monde.",
+    "future_title": "Pourquoi c'est le plus important pour l'avenir de l'Allemagne :",
+    "future_text": "Seulement si nous avons maintenant le courage de moderniser radicalement notre administration, nous sécurisons la prospérité à long terme, la compétitivité et la qualité de vie pour les générations futures. La triple combinaison de dérégulation, d'IA et de blockchain n'est pas seulement une opportunité, mais la condition préalable décisive pour que l'Allemagne prenne un rôle de leadership dans la concurrence mondiale et reste attractive pour les citoyens et les entreprises.",
+    "identity_title": "Vérification d'Identité Numérique pour Votre Vote",
+    "identity_description": "Pour assurer l'intégrité du référendum, nous utilisons des documents d'identité numériques sécurisés reconnus en Allemagne.",
+    "identity_choose": "Choisissez votre vérification d'identité :",
+    "zkpassport": {
+      "title": "Passeport Rarimo ZK",
+      "description": "Vérification de passeport Zero-Knowledge avec confidentialité maximale",
+      "badge": "Révolutionnaire & Sécurisé"
+    },
+    "npa": {
+      "title": "Fonction d'Identité en Ligne (nPA)",
+      "description": "Utilisez votre carte d'identité avec fonction d'identité en ligne",
+      "badge": "Officiellement reconnu"
+    },
+    "eid": {
+      "title": "Identité eID",
+      "description": "Identité numérique via système eID",
+      "badge": "Conforme eIDAS"
+    },
+    "bundid": {
+      "title": "BundID",
+      "description": "Identité numérique nationale",
+      "badge": "Gouvernemental"
+    },
+    "video_ident": {
+      "title": "Identification Vidéo",
+      "description": "Identification en ligne sécurisée par vidéo",
+      "badge": "Simple & Rapide"
+    }
+  },
+  "party_launch": {
+    "title": "Lancement du Parti : 14 Septembre 2025",
+    "subtitle": "Schloss Burgscheidungen - Le Début d'une Nouvelle Ère",
+    "description": "Soyez présent lors de la fondation officielle du Parti Numérique Européen. Un moment historique pour l'avenir numérique de l'Allemagne.",
+    "date": "14.9.2025",
+    "time": "14h00",
+    "location": "Schloss Burgscheidungen",
+    "register": "S'Inscrire Maintenant"
+  },
+  "footer": {
+    "party": {
+      "title": "Parti",
+      "links": [
+        "Référendum",
+        "Exemples",
+        "Émotions",
+        "À Propos",
+        "Voter"
+      ]
+    },
+    "initiative": {
+      "title": "Initiative",
+      "links": [
+        "Crise Bureaucratique",
+        "Science",
+        "Démocratie Directe",
+        "Avantages"
+      ]
+    },
+    "legal": {
+      "title": "Légal",
+      "links": [
+        "Confidentialité",
+        "Mentions Légales",
+        "Conditions"
+      ]
+    },
+    "copyright": "© 2025 Parti Numérique Européen. Tous droits réservés."
+  },
+  "language_selector": {
+    "title": "Choisir la Langue",
+    "german": "Deutsch",
+    "english": "English",
+    "french": "Français",
+    "spanish": "Español",
+    "italian": "Italiano"
+  }
+} 
