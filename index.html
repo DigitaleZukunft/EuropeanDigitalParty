@@ -1,21 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Europäische Digitalpartei (EDP)</title>
-  <meta name="description" content="Bürokratie abbauen. Demokratie stärken. Mit KI, Blockchain und digitalen Volksabstimmungen auf allen Ebenen.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Europäische Digitalpartei – Bürokratie abbauen. Demokratie stärken.</title>
+  <meta name="description" content="EDP verbindet Verwaltungsreform mit digitaler Beteiligung: KI, Blockchain, ZK-Abstimmungen. Bürokratie abbauen, Demokratie stärken." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Tailwind via CDN (no build) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Tailwind Play CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .scroll-mt-24 { scroll-margin-top: 6rem; }
+    .container { max-width: 80rem; }
+    .ring-1 { box-shadow: 0 0 0 1px rgba(0,0,0,.05); }
+  </style>
 </head>
-<body class="min-h-screen bg-white text-slate-900 font-[Inter]">
-  <!-- Navigation -->
-  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b">
-    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+<body class="min-h-screen bg-white text-slate-900 font-sans">
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 border-b">
+    <div class="mx-auto w-full container px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <a href="#start" class="group inline-flex items-center gap-2">
           <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-emerald-500 text-white font-black">EDP</span>
@@ -31,45 +47,50 @@
           <a href="#quellen" class="text-slate-600 hover:text-slate-900">Quellen</a>
           <a href="#faq" class="text-slate-600 hover:text-slate-900">FAQ</a>
           <a href="#kontakt" class="text-slate-600 hover:text-slate-900">Kontakt</a>
-          <a href="#kontakt" class="ml-2 inline-flex items-center rounded-lg bg-blue-600 px-3 py-2 text-white text-sm font-semibold shadow hover:bg-blue-700">Mitmachen</a>
+          <a href="#kontakt" class="ml-2 inline-flex items-center justify-center rounded-md bg-blue-600 px-3 py-1.5 text-white hover:bg-blue-700">Mitmachen</a>
         </nav>
-        <div class="md:hidden">
-          <a href="#kontakt" class="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-3 py-2 text-white text-sm font-semibold shadow hover:bg-blue-700">Mitmachen</a>
-        </div>
       </div>
     </div>
   </header>
 
-  <!-- Aufmacher -->
+  <!-- Hero -->
   <section id="start" class="scroll-mt-24 py-16 md:py-24 bg-gradient-to-br from-blue-700 via-blue-600 to-emerald-600 text-white">
-    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid items-center gap-10 py-10 md:grid-cols-2 md:py-20">
-      <div>
-        <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset bg-blue-50/10 text-white ring-white/20">✨ Neuer Gesellschaftsvertrag</span>
-        <h1 class="mt-4 text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">
-          Bürokratie abbauen. Demokratie stärken.
-          <span class="block text-emerald-200">Mit KI, Blockchain und gesundem Menschenverstand.</span>
-        </h1>
-        <p class="mt-4 max-w-prose text-blue-50/90">
-          Staat darf sich nicht wie ein Hindernislauf anfühlen. <strong>EDP</strong> verbindet Verwaltungsreform mit echter Mitbestimmung – sicher, überprüfbar, menschlich.
-        </p>
-        <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-          <a href="#kontakt" class="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 text-sm font-semibold text-blue-700 shadow hover:bg-blue-50">Jetzt mitmachen</a>
-          <a href="#programm" class="inline-flex items-center justify-center rounded-md bg-white/10 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/30 hover:bg-white/20">Programm lesen</a>
+    <div class="mx-auto w-full container px-4 sm:px-6 lg:px-8">
+      <div class="grid items-center gap-10 py-10 md:grid-cols-2 md:py-20">
+        <div>
+          <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset bg-blue-50/10 text-emerald-100 ring-white/20"><i data-lucide="sparkles" class="h-3.5 w-3.5"></i> Neuer Gesellschaftsvertrag</span>
+          <h1 class="mt-4 text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">
+            Bürokratie abbauen. Demokratie stärken.
+            <span class="block text-emerald-200">Mit KI, Blockchain und gesundem Menschenverstand.</span>
+          </h1>
+          <p class="mt-4 max-w-prose text-blue-50/90">
+            Wir sind überzeugt: Staat darf sich nicht wie ein Hindernislauf anfühlen. <strong>EDP</strong> verbindet Verwaltungsreform mit echter
+            Mitbestimmung – sicher, überprüfbar, menschlich. Digitale Services mit KI und Blockchain machen Verfahren messbar schneller und günstiger
+            und sparen bares Geld in den öffentlichen Haushalten, was am Ende allen zugutekommt. Weniger sinnloses Papier, weniger Anfahrten und
+            Warten – mehr Zeit für Familie, Beruf und ehrenamtliches Engagement. Damit Entscheidungen dahin kommen, wo sie hingehören:
+            <em>zu den Menschen</em>.
+          </p>
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+            <a href="#kontakt" class="inline-flex items-center justify-center rounded-md bg-white/10 px-4 py-2 text-white ring-1 ring-white/20 backdrop-blur hover:bg-white/20">Jetzt mitmachen <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i></a>
+            <a href="#programm" class="inline-flex items-center justify-center rounded-md bg-white px-4 py-2 text-slate-900 hover:bg-slate-100">Programm lesen <i data-lucide="book-open" class="ml-2 h-4 w-4"></i></a>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset bg-emerald-50 text-emerald-700 ring-emerald-200"><i data-lucide="shield-check" class="h-3.5 w-3.5"></i> Datenschutz ab Werk</span>
+            <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset bg-slate-50 text-slate-700 ring-slate-200"><i data-lucide="lock" class="h-3.5 w-3.5"></i> ZK‑Abstimmungen</span>
+            <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset bg-amber-50 text-amber-700 ring-amber-200"><i data-lucide="file-text" class="h-3.5 w-3.5"></i> Öffentliche Prüfungen</span>
+          </div>
         </div>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset bg-emerald-50 text-emerald-700 ring-emerald-200">✔ Datenschutz ab Werk</span>
-          <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset bg-slate-50 text-slate-700 ring-slate-200">✔ ZK‑Abstimmungen</span>
-          <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset bg-amber-50 text-amber-700 ring-amber-200">✔ Öffentliche Prüfungen</span>
-        </div>
-      </div>
-      <div>
-        <div class="border-0 shadow-2xl bg-white/10 backdrop-blur ring-1 ring-white/20 rounded-xl p-6">
-          <h3 class="text-white text-lg font-semibold">So funktioniert der digitale Volksentscheid</h3>
-          <ol class="mt-4 space-y-3 text-sm text-white/90 list-decimal list-inside">
-            <li><strong>Identität</strong> per eIDAS/Online‑Ausweis – lokal verifiziert, kein zentrales Personenregister.</li>
-            <li><strong>Abstimmung</strong> via Zero‑Knowledge‑Beweis: Stimme zählt, Identität bleibt verborgen.</li>
-            <li><strong>Prüfung</strong> auf einer öffentlichen, genehmigten Blockchain – Ergebnis ist fälschungssicher.</li>
-          </ol>
+        <div>
+          <div class="border-0 shadow-2xl bg-white/10 backdrop-blur ring-1 ring-white/20 rounded-xl">
+            <div class="p-6 border-b border-white/20"><h3 class="text-lg font-semibold text-white">So funktioniert der digitale Volksentscheid</h3></div>
+            <div class="p-6">
+              <ol class="space-y-3 text-sm text-white/90">
+                <li class="flex items-start gap-3"><span class="mt-1">1.</span><div><strong>Identität</strong> per eIDAS/Online‑Ausweis – lokal verifiziert, kein zentrales Personenregister.</div></li>
+                <li class="flex items-start gap-3"><span class="mt-1">2.</span><div><strong>Abstimmung</strong> via Zero‑Knowledge‑Beweis: Stimme zählt, Identität bleibt verborgen.</div></li>
+                <li class="flex items-start gap-3"><span class="mt-1">3.</span><div><strong>Prüfung</strong> auf einer öffentlichen, genehmigten Blockchain – Ergebnis ist fälschungssicher.</div></li>
+              </ol>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -77,41 +98,59 @@
 
   <!-- Mission -->
   <section id="mission" class="scroll-mt-24 py-16 md:py-24 bg-white">
-    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-3">
-      <div class="rounded-xl border p-6 hover:shadow-xl transition-shadow">
-        <h3 class="text-slate-800 text-lg font-semibold">Effiziente Verwaltung</h3>
-        <p class="mt-2 text-slate-600">KI reduziert Wartezeiten, beseitigt Doppelarbeit und schafft Zeit für Service am Menschen.</p>
-      </div>
-      <div class="rounded-xl border p-6 hover:shadow-xl transition-shadow">
-        <h3 class="text-slate-800 text-lg font-semibold">Nachvollziehbare Prozesse</h3>
-        <p class="mt-2 text-slate-600">Blockchain protokolliert Entscheidungen unveränderlich – überprüfbar für alle.</p>
-      </div>
-      <div class="rounded-xl border p-6 hover:shadow-xl transition-shadow">
-        <h3 class="text-slate-800 text-lg font-semibold">Direkte Teilhabe</h3>
-        <p class="mt-2 text-slate-600">Volksabstimmungen von der Gemeinde bis Europa – barrierearm und sicher.</p>
+    <div class="mx-auto w-full container px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Card 1 -->
+        <div class="border rounded-xl hover:shadow-xl transition-shadow">
+          <div class="p-6 border-b"><h3 class="flex items-center gap-2 text-slate-800 font-semibold"><i data-lucide="cpu" class="h-5 w-5"></i>Effiziente Verwaltung</h3></div>
+          <div class="p-6 text-slate-600">
+            KI‑gestützte Systeme verkürzen Wartezeiten dramatisch, beseitigen Doppelarbeit und helfen bei der Antragsstellung. Automatisch vorausgefüllte Formulare, intelligente Checklisten und Plausibilitätsprüfungen sorgen dafür, dass Fehler früh erkannt werden. Studien zeigen, dass digitale Verfahren im Schnitt 74 % schneller und 95 % günstiger sind als Papierwege und im Schnitt rund 27 % der administrativen Kosten einsparen – so bleibt mehr Zeit für die menschliche Beratung und mehr Geld in der öffentlichen Kasse.
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="border rounded-xl hover:shadow-xl transition-shadow">
+          <div class="p-6 border-b"><h3 class="flex items-center gap-2 text-slate-800 font-semibold"><i data-lucide="blocks" class="h-5 w-5"></i>Nachvollziehbare Prozesse</h3></div>
+          <div class="p-6 text-slate-600">
+            Genehmigte Blockchains erzeugen eine fälschungssichere Prüf‑Spur: Entscheidungen werden unveränderlich protokolliert und sind für alle nachvollziehbar. Durch föderierte Ketten und Zero‑Knowledge‑Technologie lassen sich Datenschutz und Transparenz zugleich gewährleisten. Forschung und Praxis zeigen, dass die digitale Archivierung Korruption reduziert, Vertrauen stärkt und zugleich Aufwand und Kosten in der Verwaltung deutlich senkt.
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="border rounded-xl hover:shadow-xl transition-shadow">
+          <div class="p-6 border-b"><h3 class="flex items-center gap-2 text-slate-800 font-semibold"><i data-lucide="users-2" class="h-5 w-5"></i>Direkte Teilhabe</h3></div>
+          <div class="p-6 text-slate-600">
+            Barrierearme, sichere Abstimmungen ermöglichen Bürgerinnen und Bürgern jeder Generation die Teilnahme – egal ob vom Dorf oder aus der Stadt. Online‑Volksentscheide ergänzen Parlamente, nicht ersetzen sie: Wer möchte, kann weiterhin per Post abstimmen; wer digital wählt, spart Porto, Papier und Wege. So wird direkte Demokratie endlich inklusiv und erreicht auch Menschen mit Mobilitäts‑ oder Zeitbeschränkungen.
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Probleme -->
   <section id="probleme" class="scroll-mt-24 py-16 md:py-24 bg-slate-50">
-    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-2">
-      <div>
-        <h2 class="text-2xl font-bold tracking-tight text-slate-900">Die Lage: komplex, langsam, intransparent</h2>
-        <p class="mt-3 text-slate-700">Genehmigungen dauern Monate, Regeln widersprechen sich, Daten liegen in Silos. Ergebnis: Frust bei Bürgern, Kosten für Unternehmen, Überlastung der Behörden.</p>
-        <ul class="mt-4 space-y-3 text-slate-800">
-          <li>• Lange Verfahren und hohe Transaktionskosten</li>
-          <li>• Unübersichtliche Rechtslage und Doppelungen</li>
-          <li>• Fehlende Nachvollziehbarkeit und Vertrauen</li>
-        </ul>
-      </div>
-      <div class="rounded-xl border p-6 bg-white">
-        <h3 class="text-lg font-semibold">Was Menschen berichten</h3>
-        <div class="mt-3 space-y-3 text-sm text-slate-700">
-          <p>„Anträge sind überall anders und keiner weiß, was wirklich gilt.“</p>
-          <p>„Wir warten Wochen auf Rückmeldung – telefonisch nicht erreichbar.“</p>
-          <p>„Es gibt drei Portale, keines spricht mit dem anderen.“</p>
-          <p class="text-slate-500">* Beispiele sinngemäß aus häufigen Nutzerbeschwerden.</p>
+    <div class="mx-auto w-full container px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-8 md:grid-cols-2">
+        <div>
+          <h2 class="text-2xl font-bold tracking-tight text-slate-900">Die Lage: komplex, langsam, intransparent</h2>
+          <p class="mt-3 text-slate-700">
+            In zu vielen Verwaltungen herrscht noch Papierkrieg: Genehmigungen dauern Monate, Regeln widersprechen sich und Akten liegen als analoge Inseln in Silos. Bürgerinnen und Bürger füllen immer wieder die gleichen Formulare aus, müssen mehrmals vorsprechen und verlieren wertvolle Lebenszeit. Für Unternehmen entstehen hohe Kosten durch Verzögerungen und unnötige Auflagen; Korruption und Intransparenz gedeihen im Dickicht und belasten das Vertrauen in Staat und Politik. Die Folge ist Frust bei allen Beteiligten und eine chronische Überlastung der Behörden.
+          </p>
+          <ul class="mt-4 space-y-3 text-slate-800">
+            <li class="flex items-start gap-2"><i data-lucide="line-chart" class="mt-1 h-4 w-4 text-amber-600"></i> Lange Verfahren, hohe volkswirtschaftliche Kosten und Zeitverschwendung</li>
+            <li class="flex items-start gap-2"><i data-lucide="scroll-text" class="mt-1 h-4 w-4 text-amber-600"></i> Unübersichtliche Rechtslage, doppelte Datenabfragen und widersprüchliche Regeln</li>
+            <li class="flex items-start gap-2"><i data-lucide="lock" class="mt-1 h-4 w-4 text-amber-600"></i> Fehlende Nachvollziehbarkeit, Intransparenz und Korruptionsrisiken</li>
+            <li class="flex items-start gap-2"><i data-lucide="sparkles" class="mt-1 h-4 w-4 text-amber-600"></i> Umweltbelastung durch Papierberge und unnötige Fahrten</li>
+          </ul>
+        </div>
+        <div>
+          <div class="h-full border rounded-xl">
+            <div class="p-6 border-b"><h3 class="font-semibold">Was Menschen berichten</h3></div>
+            <div class="p-6 space-y-3 text-sm text-slate-700">
+              <p>„Anträge sind überall anders und keiner weiß, was wirklich gilt.“</p>
+              <p>„Wir warten Wochen auf Rückmeldung – telefonisch nicht erreichbar.“</p>
+              <p>„Es gibt drei Portale, keines spricht mit dem anderen.“</p>
+              <p class="text-slate-500">* Beispiele sinngemäß aus häufigen Nutzerbeschwerden.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -119,33 +158,43 @@
 
   <!-- Lösung -->
   <section id="loesung" class="scroll-mt-24 py-16 md:py-24 bg-white">
-    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Die Lösung: schlanke Regeln, smarte Abläufe, sichere Abstimmungen</h2>
-      <p class="mt-3 text-slate-700">EDP setzt auf eine kombinierte Reform von Recht, IT und Prozessen. Technologie ist Mittel zum Zweck – nicht Selbstzweck.</p>
-      <div class="grid gap-6 md:grid-cols-3 mt-8">
-        <div class="rounded-xl border p-6 hover:shadow-xl transition">
-          <h3 class="text-lg font-semibold">KI‑Assistenz</h3>
-          <ul class="mt-2 space-y-2 text-slate-700 list-disc list-inside">
-            <li>Dokumente prüfen und Vorbescheide erzeugen</li>
-            <li>Formulare vorausfüllen, Medienbrüche vermeiden</li>
-            <li>Argumente strukturieren und Faktenprüfungen vorschlagen</li>
-          </ul>
+    <div class="mx-auto w-full container px-4 sm:px-6 lg:px-8">
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">Die Lösung: schlanke Regeln, smarte Abläufe, sichere Abstimmungen</h2>
+        <p class="mt-3 text-slate-700">
+          EDP setzt auf eine kombinierte Reform von Recht, IT und Prozessen: veraltete Regeln vereinfachen, digitale Verfahren einführen und Arbeitsabläufe neu denken. Technologie ist dabei kein Selbstzweck, sondern Werkzeug, um messbare Verbesserungen zu erzielen. Durch künstliche Intelligenz und Blockchain schaffen wir schnellere Entscheidungen, sparen Geld und Papier, senken den CO₂‑Fußabdruck und erhöhen gleichzeitig die Transparenz und Sicherheit der Beteiligten. So werden Verwaltung und Demokratie nicht nur moderner, sondern auch wirtschaftlicher und menschlicher.
+        </p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="border rounded-xl hover:shadow-xl transition">
+          <div class="p-6 border-b"><h3 class="flex items-center gap-2 font-semibold"><i data-lucide="cpu" class="h-5 w-5"></i>KI‑Assistenz</h3></div>
+          <div class="p-6">
+            <ul class="space-y-2 text-slate-700">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 text-emerald-600"></i>Dokumente prüfen und Vorbescheide erzeugen</li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 text-emerald-600"></i>Formulare vorausfüllen, Medienbrüche vermeiden</li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 text-emerald-600"></i>Argumente strukturieren und Faktenprüfungen vorschlagen</li>
+            </ul>
+          </div>
         </div>
-        <div class="rounded-xl border p-6 hover:shadow-xl transition">
-          <h3 class="text-lg font-semibold">ZK‑Abstimmung</h3>
-          <ul class="mt-2 space-y-2 text-slate-700 list-disc list-inside">
-            <li>Wahlgeheimnis mit Zero‑Knowledge</li>
-            <li>Öffentlich prüfbarer Stimmnachweis</li>
-            <li>Angepasstes <a class="underline decoration-emerald-500 underline-offset-2" href="https://docs.rarimo.com/freedom-tool/" target="_blank" rel="noreferrer">Rarimo Freedom Tool</a> für ZK‑Pässe</li>
-          </ul>
+        <div class="border rounded-xl hover:shadow-xl transition">
+          <div class="p-6 border-b"><h3 class="flex items-center gap-2 font-semibold"><i data-lucide="shield-check" class="h-5 w-5"></i>ZK‑Abstimmung</h3></div>
+          <div class="p-6">
+            <ul class="space-y-2 text-slate-700">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 text-emerald-600"></i>Wahlgeheimnis mit Zero‑Knowledge</li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 text-emerald-600"></i>Öffentlich prüfbarer Stimmnachweis</li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 text-emerald-600"></i>Angepasstes <a class="underline decoration-emerald-500 underline-offset-2" href="https://docs.rarimo.com/freedom-tool/" target="_blank" rel="noreferrer">Rarimo Freedom Tool</a> für ZK‑Pässe</li>
+            </ul>
+          </div>
         </div>
-        <div class="rounded-xl border p-6 hover:shadow-xl transition">
-          <h3 class="text-lg font-semibold">Prüf‑Blockchain</h3>
-          <ul class="mt-2 space-y-2 text-slate-700 list-disc list-inside">
-            <li>Unveränderliche Protokolle (nur schreiben)</li>
-            <li>Behördenverbund: genehmigt und föderiert</li>
-            <li>DSGVO‑konforme Trennung: Identität ≠ Stimme</li>
-          </ul>
+        <div class="border rounded-xl hover:shadow-xl transition">
+          <div class="p-6 border-b"><h3 class="flex items-center gap-2 font-semibold"><i data-lucide="blocks" class="h-5 w-5"></i>Prüf‑Blockchain</h3></div>
+          <div class="p-6">
+            <ul class="space-y-2 text-slate-700">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 text-emerald-600"></i>Unveränderliche Protokolle (nur schreiben)</li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 text-emerald-600"></i>Behördenverbund: genehmigt und föderiert</li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="mt-1 h-4 w-4 text-emerald-600"></i>DSGVO‑konforme Trennung: Identität ≠ Stimme</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -153,21 +202,31 @@
 
   <!-- Abstimmungen -->
   <section id="abstimmungen" class="scroll-mt-24 py-16 md:py-24 bg-slate-50">
-    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Digitale Volksabstimmungen auf allen Ebenen</h2>
-      <p class="mt-3 text-slate-700">Gemeinde, Land, Bund und EU: rechtssichere, anonyme und überprüfbare Abstimmungen. Kernbaustein ist ein angepasster <a class="underline decoration-emerald-500 underline-offset-2" href="https://docs.rarimo.com/freedom-tool/" target="_blank" rel="noreferrer">Rarimo Freedom Tool</a>‑ZK‑Pass für Stimmberechtigte.</p>
-      <div class="grid gap-6 md:grid-cols-3 mt-8">
-        <div class="rounded-xl border p-6 bg-white">
-          <h3 class="text-lg font-semibold">Identität</h3>
-          <p class="mt-2 text-slate-700">Nach eIDAS/Online‑Ausweis lokal geprüft; ausstellende Stelle sieht keine Stimmabgabe.</p>
+    <div class="mx-auto w-full container px-4 sm:px-6 lg:px-8">
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">Digitale Volksabstimmungen auf allen Ebenen</h2>
+        <p class="mt-3 text-slate-700">
+          Gemeinde, Land, Bund und EU: Rechtssichere, anonyme und überprüfbare Abstimmungen werden digital nicht nur sicherer, sondern auch deutlich günstiger und schneller. Digitale Volksentscheide sparen Druck‑, Porto‑ und Auszählkosten und senken den Aufwand um bis zu 95 %; sie beschleunigen Verfahren um durchschnittlich 74 % und ermöglichen eine flexible Stimmabgabe von zu Hause, aus dem Rathaus oder per Brief. Kernbaustein ist ein angepasster <a class="underline decoration-emerald-500 underline-offset-2" href="https://docs.rarimo.com/freedom-tool/" target="_blank" rel="noreferrer">Rarimo Freedom Tool</a>‑ZK‑Pass für Stimmberechtigte, der das Wahlgeheimnis schützt und trotzdem den Nachweis der Gültigkeit zulässt.
+        </p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="border rounded-xl">
+          <div class="p-6 border-b"><h3 class="font-semibold">Identität</h3></div>
+          <div class="p-6 text-slate-700">
+            Die Stimmberechtigung wird per eIDAS/Online‑Ausweis lokal geprüft – ohne zentrales Personenregister. Behörden erhalten nur die Information, dass eine Person wahlberechtigt ist, nicht aber wie sie abgestimmt hat. Für alle ohne eigenes Endgerät stehen Terminals in Rathäusern oder mobilen Bürgermobilen bereit.
+          </div>
         </div>
-        <div class="rounded-xl border p-6 bg-white">
-          <h3 class="text-lg font-semibold">Abstimmung</h3>
-          <p class="mt-2 text-slate-700">ZK‑Beweis: Stimme gültig, Identität verborgen; barrierearme Oberfläche.</p>
+        <div class="border rounded-xl">
+          <div class="p-6 border-b"><h3 class="font-semibold">Abstimmung</h3></div>
+          <div class="p-6 text-slate-700">
+            Über einen Zero‑Knowledge‑Beweis wird die Gültigkeit der Stimme nachgewiesen, während die Identität verborgen bleibt. Die Oberfläche ist barrierearm, funktioniert auf Smartphone, PC oder Tablet und bietet für ältere Menschen optionale Unterstützung durch Hotline oder persönliche Hilfe vor Ort. Papierstimmzettel können weiterhin genutzt und digital mitgezählt werden – für maximale Inklusion.
+          </div>
         </div>
-        <div class="rounded-xl border p-6 bg-white">
-          <h3 class="text-lg font-semibold">Prüfung</h3>
-          <p class="mt-2 text-slate-700">Öffentlich prüfbarer Nachweis auf einer genehmigten Blockchain; Beobachtung ohne Personenbezug.</p>
+        <div class="border rounded-xl">
+          <div class="p-6 border-b"><h3 class="font-semibold">Prüfung</h3></div>
+          <div class="p-6 text-slate-700">
+            Jede Abstimmung erzeugt einen öffentlich einsehbaren Nachweis auf einer genehmigten, energieeffizienten Blockchain. Damit kann jeder ohne Spezialwissen überprüfen, ob seine Stimme gezählt wurde und ob das Gesamtergebnis korrekt zustande kam. Die Prüfbarkeit funktioniert ohne Rückschluss auf die Person und ermöglicht so Vertrauen ohne Überwachung.
+          </div>
         </div>
       </div>
     </div>
@@ -175,58 +234,59 @@
 
   <!-- Programm -->
   <section id="programm" class="scroll-mt-24 py-16 md:py-24 bg-slate-50">
-    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto w-full container px-4 sm:px-6 lg:px-8">
       <div class="mb-8 flex items-end justify-between gap-4">
         <div>
           <h2 class="text-2xl font-bold tracking-tight text-slate-900">Programm in 9 Punkten</h2>
           <p class="mt-3 text-slate-700">Konsequent. Messbar. Bürgernah.</p>
         </div>
-        <span class="inline-flex items-center rounded-md border px-2 py-1 text-xs text-slate-600">Version 1.0 (lebendes Dokument)</span>
+        <span class="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-700">Version 1.0 (lebendes Dokument)</span>
       </div>
       <div class="grid gap-6 md:grid-cols-3">
-        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">1. Ein Verfahren, ein Konto</h3><p class="text-slate-700 mt-2">Ein Portal mit einheitlichem Status‑Verlauf</p></div>
-        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">2. 180‑Tage‑Garantie</h3><p class="text-slate-700 mt-2">Klare Fristen: Wird die Frist überschritten, gilt der Antrag als genehmigt</p></div>
-        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">3. Gesetze in Klartext</h3><p class="text-slate-700 mt-2">Verbindliche Leichte‑Sprache‑Fassungen mit Rechtswirkung</p></div>
-        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">4. Daten nur einmal</h3><p class="text-slate-700 mt-2">Once‑Only‑Prinzip, Register statt Upload‑Hürden</p></div>
-        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">5. Offene Regeln</h3><p class="text-slate-700 mt-2">Maschinenlesbare Verordnungen und öffentliche Testfälle</p></div>
-        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">6. Volksabstimmungen digital</h3><p class="text-slate-700 mt-2">Gemeinde, Land, Bund, EU: ZK‑Abstimmungen mit angepasstem Rarimo Freedom Tool</p></div>
-        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">7. Faires Nachverfolgen</h3><p class="text-slate-700 mt-2">Transparenz‑Tafeln: Wartezeiten, Rückstände, Qualität</p></div>
-        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">8. KI in der Verwaltung</h3><p class="text-slate-700 mt-2">Assistenten für Sachbearbeitung – Kontrolle bleibt beim Menschen</p></div>
-        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">9. Prüf‑Spur</h3><p class="text-slate-700 mt-2">Jeder Verwaltungsakt unveränderlich protokolliert</p></div>
+        <!-- 9 cards -->
+        <div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">1. Ein Verfahren, ein Konto</h3></div><div class="p-6 text-slate-700">Alle Verwaltungsleistungen werden über ein zentrales Bürgerkonto abgewickelt – egal ob Baugenehmigung, Vereinsgründung oder Gewerbeanmeldung. Statt zig Portale und Kennwörter gibt es ein einziges Dashboard mit transparentem Status‑Verlauf, Erinnerungsfunktion und sicheren Nachrichtenkanälen.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">2. 180‑Tage‑Garantie</h3></div><div class="p-6 text-slate-700">Anträge dürfen nicht in der Warteschleife verschwinden. Klare Fristen geben Planbarkeit: Wird ein Verwaltungsakt nicht innerhalb von 180 Tagen entschieden, gilt der Antrag als automatisch genehmigt. Behörden werden so zu effizientem Handeln motiviert, Bürgerinnen und Unternehmer erhalten Rechtssicherheit.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">3. Gesetze in Klartext</h3></div><div class="p-6 text-slate-700">Amtliche Texte müssen verständlich sein. Jede Regelung erhält eine verbindliche Version in einfacher Sprache und mit Beispielen. Diese Klartext‑Fassungen haben Rechtswirkung und erleichtern es allen – ob Laie oder Jurist –, ihre Rechte und Pflichten zu verstehen.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">4. Daten nur einmal</h3></div><div class="p-6 text-slate-700">Das Once‑Only‑Prinzip beendet die Mehrfacheingabe: Daten werden einmal erfasst und über Register geteilt. Statt immer neue Nachweise hochzuladen, verknüpfen sich Register miteinander – natürlich datenschutzkonform. So sinkt der Aufwand für Bürger und Verwaltung, und es entstehen weniger Fehler.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">5. Offene Regeln</h3></div><div class="p-6 text-slate-700">Verordnungen werden maschinenlesbar veröffentlicht und mit öffentlichen Testfällen hinterlegt. So können Unternehmen und Zivilgesellschaft Algorithmen entwickeln, die Gesetze automatisch anwenden, und Fehler in Normen schnell melden. Transparenz fördert Vertrauen und beschleunigt die Umsetzung.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">6. Volksabstimmungen digital</h3></div><div class="p-6 text-slate-700">Ob Gemeinde, Land, Bund oder EU – digitale Volksentscheide mit Zero‑Knowledge‑Technologie werden Standard. Sie sind kostengünstig, barrierefrei und machen politische Beteiligung alltagstauglich. Wer möchte, kann weiterhin per Brief abstimmen; digital Teilnehmende profitieren von flexiblen Stimmzeiten und unmittelbarer Bestätigung.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">7. Faires Nachverfolgen</h3></div><div class="p-6 text-slate-700">Durch Transparenz‑Tafeln und Kennzahlen werden Wartezeiten, Rückstände und Bearbeitungsqualität öffentlich. Vergleiche zwischen Ämtern schaffen Anreize zur Verbesserung. Die Daten werden in Echtzeit aktualisiert, damit sich Bürger informieren und Behörden voneinander lernen können.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">8. KI in der Verwaltung</h3></div><div class="p-6 text-slate-700">Künstliche Intelligenz unterstützt Sachbearbeitende bei Routineaufgaben wie Dokumenten‑Erkennung, Plausibilitätsprüfungen und Recherche. Die finale Entscheidung bleibt beim Menschen. Dank Automatisierung sinken die Kosten, die Fehlerquote reduziert sich und die Mitarbeitenden gewinnen Zeit für komplexe Fälle und den direkten Kontakt.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">9. Prüf‑Spur</h3></div><div class="p-6 text-slate-700">Jede Transaktion hinterlässt einen unveränderlichen Protokolleintrag auf einer genehmigten Blockchain. Bürgerinnen und Bürger können damit im Nachgang überprüfen, ob ein Vorgang korrekt bearbeitet wurde, ohne ihre Identität offenzulegen. Diese Transparenz verhindert Manipulation, stärkt das Vertrauen und erleichtert externe Prüfungen.</div></div>
       </div>
     </div>
   </section>
 
   <!-- Fahrplan -->
   <section id="fahrplan" class="scroll-mt-24 py-16 md:py-24 bg-white">
-    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto w-full container px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-bold tracking-tight text-slate-900">Fahrplan (36 Monate)</h2>
       <div class="mt-6">
-        <div class="flex gap-2" role="tablist">
-          <button class="tab-trigger active" data-tab="phase1">Phase 1</button>
-          <button class="tab-trigger" data-tab="phase2">Phase 2</button>
-          <button class="tab-trigger" data-tab="phase3">Phase 3</button>
+        <div class="grid grid-cols-3 rounded-lg border overflow-hidden text-sm">
+          <button data-tab="phase1" class="tab-btn px-4 py-2 bg-slate-100 border-r text-slate-800 font-medium">Phase 1</button>
+          <button data-tab="phase2" class="tab-btn px-4 py-2 border-r hover:bg-slate-50">Phase 2</button>
+          <button data-tab="phase3" class="tab-btn px-4 py-2 hover:bg-slate-50">Phase 3</button>
         </div>
         <div class="mt-4">
-          <div class="tab-content" id="phase1">
+          <div class="tab-panel" id="phase1">
             <div class="grid gap-6 md:grid-cols-3">
-              <div class="rounded-xl border p-6"><h3 class="font-semibold">Digitale Basis</h3><p class="text-slate-700 mt-2">Registerabgleich, eID‑Login, Akten‑Digitalisierung</p></div>
-              <div class="rounded-xl border p-6"><h3 class="font-semibold">Pilotkommunen</h3><p class="text-slate-700 mt-2">3–5 Städte, standardisierte Prozesse</p></div>
-              <div class="rounded-xl border p-6"><h3 class="font-semibold">Öffentliche Prüfungen</h3><p class="text-slate-707 mt-2">Externe Prüfpfade und Fehler‑Prämien (Bug‑Bounties)</p></div>
+              <div class="border rounded-xl"><div class="p-6 border-b"><h3 class="font-semibold">Digitale Basis</h3></div><div class="p-6 text-slate-700">Registerabgleich, eID‑Login, Akten‑Digitalisierung</div></div>
+              <div class="border rounded-xl"><div class="p-6 border-b"><h3 class="font-semibold">Pilotkommunen</h3></div><div class="p-6 text-slate-700">3–5 Städte, standardisierte Prozesse</div></div>
+              <div class="border rounded-xl"><div class="p-6 border-b"><h3 class="font-semibold">Öffentliche Prüfungen</h3></div><div class="p-6 text-slate-700">Externe Prüfpfade und Fehler‑Prämien (Bug‑Bounties)</div></div>
             </div>
           </div>
-          <div class="tab-content hidden" id="phase2">
+          <div class="tab-panel hidden" id="phase2">
             <div class="grid gap-6 md:grid-cols-3">
-              <div class="rounded-xl border p-6"><h3 class="font-semibold">KI‑Rollout</h3><p class="text-slate-700 mt-2">Dokumenten‑Erkennung, Validierung, Assistenz</p></div>
-              <div class="rounded-xl border p-6"><h3 class="font-semibold">ZK‑Abstimmung</h3><p class="text-slate-700 mt-2">Gemeinde‑Referenden mit Prüf‑Spur</p></div>
-              <div class="rounded-xl border p-6"><h3 class="font-semibold">RegTech‑Paket</h3><p class="text-slate-700 mt-2">Maschinenlesbare Normen plus Testfälle</p></div>
+              <div class="border rounded-xl"><div class="p-6 border-b"><h3 class="font-semibold">KI‑Rollout</h3></div><div class="p-6 text-slate-700">Dokumenten‑Erkennung, Validierung, Assistenz</div></div>
+              <div class="border rounded-xl"><div class="p-6 border-b"><h3 class="font-semibold">ZK‑Abstimmung</h3></div><div class="p-6 text-slate-700">Gemeinde‑Referenden mit Prüf‑Spur</div></div>
+              <div class="border rounded-xl"><div class="p-6 border-b"><h3 class="font-semibold">RegTech‑Paket</h3></div><div class="p-6 text-slate-700">Maschinenlesbare Normen plus Testfälle</div></div>
             </div>
           </div>
-          <div class="tab-content hidden" id="phase3">
+          <div class="tab-panel hidden" id="phase3">
             <div class="grid gap-6 md:grid-cols-3">
-              <div class="rounded-xl border p-6"><h3 class="font-semibold">Skalierung</h3><p class="text-slate-700 mt-2">Bund/Länder/Europa – föderierte Ketten</p></div>
-              <div class="rounded-xl border p-6"><h3 class="font-semibold">Dienstleistungsziele</h3><p class="text-slate-700 mt-2">Ziele und Ergebnis‑Kennzahlen gesetzlich</p></div>
-              <div class="rounded-xl border p-6"><h3 class="font-semibold">Export‑Modell</h3><p class="text-slate-700 mt-2">Gute Praxis international teilen</p></div>
+              <div class="border rounded-xl"><div class="p-6 border-b"><h3 class="font-semibold">Skalierung</h3></div><div class="p-6 text-slate-700">Bund/Länder/Europa – föderierte Ketten</div></div>
+              <div class="border rounded-xl"><div class="p-6 border-b"><h3 class="font-semibold">Dienstleistungsziele</h3></div><div class="p-6 text-slate-700">Ziele und Ergebnis‑Kennzahlen gesetzlich</div></div>
+              <div class="border rounded-xl"><div class="p-6 border-b"><h3 class="font-semibold">Export‑Modell</h3></div><div class="p-6 text-slate-700">Gute Praxis international teilen</div></div>
             </div>
           </div>
         </div>
@@ -236,120 +296,192 @@
 
   <!-- Quellen -->
   <section id="quellen" class="scroll-mt-24 py-16 md:py-24 bg-slate-50">
-    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto w-full container px-4 sm:px-6 lg:px-8">
       <div class="mb-8">
         <h2 class="text-2xl font-bold tracking-tight text-slate-900">Quellen & weiterführende Informationen</h2>
         <p class="mt-3 text-slate-700">Ausgewählte Primärquellen mit stabilen Permalinks – für alle, die tiefer einsteigen möchten.</p>
       </div>
-      <div class="grid gap-6 md:grid-cols-2">
-        <div class="rounded-xl border p-6 bg-white">
-          <h3 class="font-semibold">Digitale Verwaltung & E‑Government</h3>
-          <ul class="mt-3 space-y-2 text-sm text-slate-800 list-disc list-inside">
-            <li><a class="hover:underline" href="https://www.oecd.org/en/publications/government-at-a-glance-2023_3d5c5d31-en.html" target="_blank" rel="noreferrer">OECD – Government at a Glance 2023</a></li>
-            <li><a class="hover:underline" href="https://www.oecd.org/en/data/dashboards/government-at-a-glance-2023.html" target="_blank" rel="noreferrer">OECD – Daten‑Dashboard</a></li>
-            <li><a class="hover:underline" href="https://publicadministration.un.org/egovkb/en-us/Reports/UN-E-Government-Survey-2024" target="_blank" rel="noreferrer">UN DESA – E‑Government Survey 2024 (Landing)</a></li>
-            <li><a class="hover:underline" href="https://desapublications.un.org/sites/default/files/publications/2024-09/%28Web%20version%29%20E-Government%20Survey%202024%201392024.pdf" target="_blank" rel="noreferrer">UN DESA – E‑Government Survey 2024 (PDF)</a></li>
-          </ul>
-        </div>
-        <div class="rounded-xl border p-6 bg-white">
-          <h3 class="font-semibold">Rechtlicher Rahmen (EU‑Identität & Signaturen)</h3>
-          <ul class="mt-3 space-y-2 text-sm text-slate-800 list-disc list-inside">
-            <li><a class="hover:underline" href="https://eur-lex.europa.eu/eli/reg/2014/910/oj/eng" target="_blank" rel="noreferrer">EUR‑Lex – Verordnung (EU) 910/2014 (eIDAS)</a></li>
-            <li><a class="hover:underline" href="https://eur-lex.europa.eu/eli/reg/2014/910/2024-10-18/eng" target="_blank" rel="noreferrer">EUR‑Lex – Konsolidierte Fassung (Stand: 18.10.2024)</a></li>
-            <li><a class="hover:underline" href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/european-digital-identity_en" target="_blank" rel="noreferrer">Europäische Digitale Identität – Überblick</a></li>
-            <li><a class="hover:underline" href="https://ec.europa.eu/digital-building-blocks/sites/display/EUDIGITALIDENTITYWALLET/EU%2BDigital%2BIdentity%2BWallet%2BHome" target="_blank" rel="noreferrer">EU Digital Identity Wallet – offizielle Seite</a></li>
-          </ul>
-        </div>
-        <div class="rounded-xl border p-6 bg-white">
-          <h3 class="font-semibold">ZK‑Abstimmungen & Kryptographie</h3>
-          <ul class="mt-3 space-y-2 text-sm text-slate-800 list-disc list-inside">
-            <li><a class="hover:underline" href="https://arxiv.org/abs/1504.03778" target="_blank" rel="noreferrer">Benaloh et al. – End‑to‑End Verifiability (2015)</a></li>
-            <li><a class="hover:underline" href="https://eprint.iacr.org/2016/260.pdf" target="_blank" rel="noreferrer">Groth 2016 – Pairing‑based SNARK (Groth16)</a></li>
-            <li><a class="hover:underline" href="https://eprint.iacr.org/2019/953.pdf" target="_blank" rel="noreferrer">PLONK 2019 – Universelle SNARK</a></li>
-            <li><a class="hover:underline" href="https://docs.rarimo.com/freedom-tool/" target="_blank" rel="noreferrer">Rarimo – Freedom Tool (Dokumentation)</a></li>
-            <li><a class="hover:underline" href="https://docs.rarimo.com/freedom-tool/smart-contracts-reference/" target="_blank" rel="noreferrer">Rarimo – Smart‑Contract‑Referenz & Deployments</a></li>
-          </ul>
-        </div>
-        <div class="rounded-xl border p-6 bg-white">
-          <h3 class="font-semibold">Register & Prüf‑Blockchain (öffentliche Dienste)</h3>
-          <ul class="mt-3 space-y-2 text-sm text-slate-800 list-disc list-inside">
-            <li><a class="hover:underline" href="https://digital-strategy.ec.europa.eu/en/policies/european-blockchain-services-infrastructure" target="_blank" rel="noreferrer">EU – European Blockchain Services Infrastructure (EBSI)</a></li>
-            <li><a class="hover:underline" href="https://hub.ebsi.eu/" target="_blank" rel="noreferrer">EBSI – Hub & technische Infos</a></li>
-            <li><a class="hover:underline" href="https://thedocs.worldbank.org/en/doc/784361528484329990-0200022018/original/BlockchainandLandJune2018.pdf" target="_blank" rel="noreferrer">Weltbank – Blockchain and Land (2018, PDF)</a></li>
-          </ul>
-        </div>
-        <div class="rounded-xl border p-6 bg-white">
-          <h3 class="font-semibold">Direkte Demokratie (Schweiz, Praxis)</h3>
-          <ul class="mt-3 space-y-2 text-sm text-slate-800 list-disc list-inside">
-            <li><a class="hover:underline" href="https://www.ch.ch/en/votes-and-elections/referendum/" target="_blank" rel="noreferrer">ch.ch – Referendum: wie es funktioniert</a></li>
-            <li><a class="hover:underline" href="https://www.ch.ch/en/political-system/political-rights/initiatives/what-is-a-federal-popular-initiative" target="_blank" rel="noreferrer">ch.ch – Volksinitiative: Überblick</a></li>
-            <li><a class="hover:underline" href="https://www.aboutswitzerland.eda.admin.ch/en/direct-democracy" target="_blank" rel="noreferrer">EDA – Direct Democracy (Hintergrund)</a></li>
-          </ul>
-        </div>
+      <!-- Two-column cards -->
+      
+<div class="grid gap-6 md:grid-cols-2">
+  <div class="border rounded-xl">
+    <div class="p-6 border-b"><h3 class="font-semibold">Digitale Verwaltung & E‑Government</h3></div>
+    <div class="p-6 space-y-4 text-sm text-slate-800">
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://www.oecd.org/en/publications/government-at-a-glance-2023_3d5c5d31-en.html" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> OECD – Government at a Glance 2023</a>
+        <p class="ml-6 text-xs text-slate-500">Internationale Vergleichsstudie zur Leistungsfähigkeit der öffentlichen Verwaltungen und Fortschritten bei der digitalen Transformation.</p>
       </div>
-      <p class="mt-6 text-xs text-slate-500">Hinweis: Einige Quellen sind englischsprachig. Alle Links sind Permalinks/Primärquellen, soweit verfügbar.</p>
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://www.oecd.org/en/data/dashboards/government-at-a-glance-2023.html" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> OECD – Daten‑Dashboard</a>
+        <p class="ml-6 text-xs text-slate-500">Interaktives Dashboard mit Kennzahlen zu Verwaltung, Effizienz und E‑Government aus dem OECD‑Bericht.</p>
+      </div>
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://publicadministration.un.org/egovkb/en-us/Reports/UN-E-Government-Survey-2024" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> UN DESA – E‑Government Survey 2024 (Landing)</a>
+        <p class="ml-6 text-xs text-slate-500">Landing‑Page des UN‑Berichts über den digitalen Reifegrad von Regierungen weltweit.</p>
+      </div>
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://desapublications.un.org/sites/default/files/publications/2024-09/%28Web%20version%29%20E-Government%20Survey%202024%201392024.pdf" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> UN DESA – E‑Government Survey 2024 (PDF)</a>
+        <p class="ml-6 text-xs text-slate-500">Vollständige PDF‑Version des UN‑Berichts mit Analysen zu Services, Partizipation und Infrastruktur.</p>
+      </div>
+    </div>
+  </div>
+  <div class="border rounded-xl">
+    <div class="p-6 border-b"><h3 class="font-semibold">Rechtlicher Rahmen (EU‑Identität & Signaturen)</h3></div>
+    <div class="p-6 space-y-4 text-sm text-slate-800">
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://eur-lex.europa.eu/eli/reg/2014/910/oj/eng" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> EUR‑Lex – Verordnung (EU) 910/2014 (eIDAS)</a>
+        <p class="ml-6 text-xs text-slate-500">EU‑Verordnung, die die rechtlichen Grundlagen für elektronische Identifizierung, Signaturen und Vertrauensdienste in der EU schafft.</p>
+      </div>
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://eur-lex.europa.eu/eli/reg/2014/910/2024-10-18/eng" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> EUR‑Lex – Konsolidierte Fassung (Stand 18.10.2024)</a>
+        <p class="ml-6 text-xs text-slate-500">Aktualisierte konsolidierte Fassung der eIDAS‑Verordnung mit allen Änderungen bis Oktober 2024.</p>
+      </div>
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/european-digital-identity_en" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> Europäische Digitale Identität – Überblick</a>
+        <p class="ml-6 text-xs text-slate-500">Kurzporträt der EU‑Kommission zur Initiative einer einheitlichen europäischen digitalen Identität und deren Einsatzbereiche.</p>
+      </div>
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://ec.europa.eu/digital-building-blocks/sites/display/EUDIGITALIDENTITYWALLET/EU%2BDigital%2BIdentity%2BWallet%2BHome" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> EU Digital Identity Wallet – offizielle Seite</a>
+        <p class="ml-6 text-xs text-slate-500">Offizielle Projektseite zur EU‑Digital‑Identity‑Wallet mit technischen Informationen, Pilotprojekten und Zeitplan.</p>
+      </div>
+    </div>
+  </div>
+  <div class="border rounded-xl">
+    <div class="p-6 border-b"><h3 class="font-semibold">ZK‑Abstimmungen & Kryptographie</h3></div>
+    <div class="p-6 space-y-4 text-sm text-slate-800">
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://arxiv.org/abs/1504.03778" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> Benaloh et al. – End‑to‑End Verifiability (2015)</a>
+        <p class="ml-6 text-xs text-slate-500">Wissenschaftlicher Artikel, der die Grundlagen verifizierbarer elektronischer Abstimmungssysteme beschreibt.</p>
+      </div>
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://eprint.iacr.org/2016/260.pdf" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> Groth 2016 – Pairing‑based SNARK (Groth16)</a>
+        <p class="ml-6 text-xs text-slate-500">Forschungsarbeit zu effizienten Zero‑Knowledge‑Beweisen mittels bilinearer Paarungen – Basis moderner zk‑SNARKs.</p>
+      </div>
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://eprint.iacr.org/2019/953.pdf" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> PLONK 2019 – Universelle SNARK</a>
+        <p class="ml-6 text-xs text-slate-500">Beschreibung der universellen, effizienten SNARK‑Konstruktion „PLONK“ für skalierbare Zero‑Knowledge‑Proofs.</p>
+      </div>
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://docs.rarimo.com/freedom-tool/" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> Rarimo – Freedom Tool (Dokumentation)</a>
+        <p class="ml-6 text-xs text-slate-500">Dokumentation des Freedom Tools, das Zero‑Knowledge‑basierte Pässe für anonyme Abstimmungen bereitstellt.</p>
+      </div>
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://docs.rarimo.com/freedom-tool/smart-contracts-reference/" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> Rarimo – Smart‑Contract‑Referenz & Deployments</a>
+        <p class="ml-6 text-xs text-slate-500">Technische Referenz zu den Smart Contracts des Freedom Tools inklusive Code‑Beispiele und Deployments.</p>
+      </div>
+    </div>
+  </div>
+  <div class="border rounded-xl">
+    <div class="p-6 border-b"><h3 class="font-semibold">Register & Prüf‑Blockchain (öffentliche Dienste)</h3></div>
+    <div class="p-6 space-y-4 text-sm text-slate-800">
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://digital-strategy.ec.europa.eu/en/policies/european-blockchain-services-infrastructure" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> EU – European Blockchain Services Infrastructure (EBSI)</a>
+        <p class="ml-6 text-xs text-slate-500">Offizielle Beschreibung der europäischen Blockchain‑Plattform für grenzüberschreitende öffentliche Dienste wie Bildungsnachweise oder Unternehmensregister.</p>
+      </div>
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://hub.ebsi.eu/" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> EBSI – Hub & technische Infos</a>
+        <p class="ml-6 text-xs text-slate-500">Portal mit technischen Spezifikationen, Pilotprojekten und Open‑Source‑Ressourcen zur EBSI‑Blockchain.</p>
+      </div>
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://thedocs.worldbank.org/en/doc/784361528484329990-0200022018/original/BlockchainandLandJune2018.pdf" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> Weltbank – Blockchain and Land (2018, PDF)</a>
+        <p class="ml-6 text-xs text-slate-500">Studie der Weltbank über den Einsatz von Blockchain in Landregistern, die zeigt, wie Transparenz und Effizienz erhöht und Korruption reduziert werden können.</p>
+      </div>
+    </div>
+  </div>
+  <div class="border rounded-xl">
+    <div class="p-6 border-b"><h3 class="font-semibold">Direkte Demokratie (Schweiz, Praxis)</h3></div>
+    <div class="p-6 space-y-4 text-sm text-slate-800">
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://www.ch.ch/en/votes-and-elections/referendum/" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> ch.ch – Referendum: wie es funktioniert</a>
+        <p class="ml-6 text-xs text-slate-500">Amtliche Informationsseite erklärt Ablauf und Bedingungen eines Referendums in der Schweiz.</p>
+      </div>
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://www.ch.ch/en/political-system/political-rights/initiatives/what-is-a-federal-popular-initiative" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> ch.ch – Volksinitiative: Überblick</a>
+        <p class="ml-6 text-xs text-slate-500">Kurzer Überblick zur Volksinitiative: Wer sie einreichen darf, wie viele Unterschriften nötig sind und wie der Prozess abläuft.</p>
+      </div>
+      <div>
+        <a class="inline-flex items-center gap-2 hover:underline" href="https://www.aboutswitzerland.eda.admin.ch/en/direct-democracy" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="h-4 w-4"></i> EDA – Direct Democracy (Hintergrund)</a>
+        <p class="ml-6 text-xs text-slate-500">Hintergrundbericht des Eidgenössischen Departements für auswärtige Angelegenheiten zur direkten Demokratie in der Schweiz.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <p class="mt-6 text-xs text-slate-500">
+        Hinweis: Einige Quellen sind englischsprachig. Alle Links sind Permalinks oder Primärquellen (soweit verfügbar) und sind jeweils mit einer kurzen inhaltlichen Zusammenfassung versehen.
+      </p>
     </div>
   </section>
 
   <!-- FAQ -->
   <section id="faq" class="scroll-mt-24 py-16 md:py-24 bg-white">
-    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto w-full container px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-bold tracking-tight text-slate-900">Fragen & Antworten</h2>
       <div class="mt-6 grid gap-6 md:grid-cols-2">
-        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">Ist das mit dem Grundgesetz vereinbar?</h3><p class="mt-2 text-slate-700">Ja. Direkte Demokratie ist auf Bundes‑/Länderebene gestaltbar. Digitale Verfahren ersetzen nicht Parlamente, sondern ergänzen sie – verfassungskonform mit einfacher/qualifizierter Mehrheit je nach Thema.</p></div>
-        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">Wie schützt ihr die Anonymität?</h3><p class="mt-2 text-slate-700">Stimmabgabe via Zero‑Knowledge‑Beweisen: Die Gültigkeit wird belegt, ohne Identität offenzulegen. Die Prüf‑Spur enthält nur verschlüsselte Belege.</p></div>
-        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">Braucht man dafür Kryptowährungen?</h3><p class="mt-2 text-slate-700">Nein. Wir nutzen genehmigte, energieeffiziente Ketten ohne spekulative Token – ausschließlich für Integrität und Prüfbarkeit.</p></div>
-        <div class="rounded-xl border p-6 bg-white"><h3 class="font-semibold">Wer kontrolliert die KI?</h3><p class="mt-2 text-slate-700">Klare Leitplanken: Offener Quellcode, Protokollierung, menschliche Letztentscheidung, Beschwerdewege, Verzerrungs‑Audits und Auswertung im Nachgang.</p></div>
+        <div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">Ist das mit dem Grundgesetz vereinbar?</h3></div><div class="p-6 text-slate-700 text-sm">Ja. Direkte Demokratie ist auf Bundes‑ und Länderebene gestaltbar. Digitale Verfahren ersetzen nicht Parlamente, sondern ergänzen sie und bleiben verfassungskonform: je nach Thema ist eine einfache oder qualifizierte Mehrheit erforderlich.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">Wie schützt ihr die Anonymität?</h3></div><div class="p-6 text-slate-700 text-sm">Unsere Abstimmung nutzt Zero‑Knowledge‑Beweise. Die Gültigkeit Ihrer Stimme wird kryptografisch bestätigt, ohne Ihre Identität offenzulegen. Die Prüf‑Spur enthält nur verschlüsselte Belege; Rückschlüsse auf einzelne Personen sind technisch ausgeschlossen.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">Braucht man dafür Kryptowährungen?</h3></div><div class="p-6 text-slate-700 text-sm">Nein. Es gibt keine spekulativen Token. Wir verwenden genehmigte, energieeffiziente Blockchains ausschließlich für Integrität und Prüfbarkeit – ohne Mining und ohne finanzielles Risiko.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">Wer kontrolliert die KI?</h3></div><div class="p-6 text-slate-700 text-sm">Künstliche Intelligenz ist ein Werkzeug, kein Entscheider. Wir setzen auf offenen Quellcode, Protokollierung, menschliche Letztentscheidung und unabhängige Audits. Bürgerinnen und Bürger können Fehler melden; Verzerrungen werden regelmäßig geprüft und die Systeme laufend verbessert.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">Warum lohnt sich Digitalisierung wirtschaftlich?</h3></div><div class="p-6 text-slate-700 text-sm">Digitale Prozesse sparen erhebliche Ressourcen: Laut internationalen Studien sind Online‑Verfahren im Durchschnitt 74 % schneller und 95 % günstiger als analoge Wege. KI‑Assistenz reduziert administrative Kosten um etwa 27 %. Weniger Papier, weniger Fahrten und weniger Wartezeiten entlasten die Staatskasse und Ihr Portemonnaie gleichermaßen.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">Sind KI und Automatisierung ein Jobkiller?</h3></div><div class="p-6 text-slate-700 text-sm">Nein. KI übernimmt monotone Routinetätigkeiten und unterstützt Sachbearbeitende, damit diese sich auf komplexe Fälle und persönliche Beratung konzentrieren können. Studien, etwa vom MIT, zeigen moderate Produktivitätsgewinne (ca. 1–1,6 % BIP); sie sehen keine massenhafte Arbeitsplatzvernichtung. Zudem entstehen neue Jobs in IT, Service und Betreuung.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">Warum überhaupt Blockchain?</h3></div><div class="p-6 text-slate-700 text-sm">Eine genehmigte Blockchain schafft fälschungssichere Protokolle und reduziert Bürokratie. Unveränderliche Einträge sorgen dafür, dass Entscheidungen transparent nachvollziehbar sind, ohne personenbezogene Daten preiszugeben. So wird Korruption erschwert, Vertrauen gestärkt und Bearbeitungszeit verkürzt: Pilotprojekte zeigen Reduktionen von 40 auf 10 Tage und Kostenersparnisse von bis zu 80 %.</div></div>
+<div class="border rounded-xl"><div class="p-6 border-b"><h3 class="text-slate-800 font-semibold">Wie können ältere oder weniger technikaffine Menschen teilnehmen?</h3></div><div class="p-6 text-slate-700 text-sm">Unsere Lösungen werden barrierearm gestaltet, mit klarer Sprache, großen Bedienelementen und Hilfefunktionen. Es gibt lokale Servicepunkte, mobile Bürgermobile und Telefon‑Hotlines, die beim Ausfüllen helfen. Wer analog bleiben möchte, kann weiterhin per Brief oder vor Ort abstimmen – die Ergebnisse werden digital zusammengeführt. Begleitprogramme und Schulungen erleichtern zusätzlich den Einstieg.</div></div>
       </div>
     </div>
   </section>
 
   <!-- Kontakt -->
   <section id="kontakt" class="scroll-mt-24 py-16 md:py-24 bg-slate-900 text-slate-100">
-    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-10 md:grid-cols-2">
-      <div>
-        <h2 class="text-2xl font-bold tracking-tight">Mitmachen</h2>
-        <p class="mt-3 text-slate-300">Ob Bürgerin, Gemeinde oder Verband – wir bauen Allianzen für praxisnahe Reformen. Wenn Sie das genauso sehen: Schließen Sie sich an. Denn Veränderung beginnt, wenn wir nicht mehr warten.</p>
-        <ul class="mt-4 space-y-3 text-slate-200">
-          <li>• Partner‑Programm für Kommunen</li>
-          <li>• Offener Quellcode & öffentliche Prüfungen</li>
-          <li>• Werkstatt‑Reihen vor Ort</li>
-        </ul>
-        <div class="mt-6 flex gap-3">
-          <a href="mailto:kontakt@europeandigital.party" class="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow hover:bg-slate-100">E‑Mail senden</a>
-          <a href="#quellen" class="inline-flex items-center justify-center rounded-md bg-slate-800 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/10 hover:bg-slate-700">Quellen ansehen</a>
+    <div class="mx-auto w-full container px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 md:grid-cols-2">
+        <div>
+          <h2 class="text-2xl font-bold tracking-tight">Mitmachen</h2>
+          <p class="mt-3 text-slate-300">Ob Bürgerin, Gemeinde oder Verband – wir bauen Allianzen für praxisnahe Reformen. Wenn Sie das genauso sehen: Schließen Sie sich an. Denn Veränderung beginnt, wenn wir nicht mehr warten.</p>
+          <ul class="mt-4 space-y-3 text-slate-200">
+            <li class="flex items-start gap-2"><i data-lucide="handshake" class="mt-1 h-4 w-4 text-emerald-400"></i> Partner‑Programm für Kommunen</li>
+            <li class="flex items-start gap-2"><i data-lucide="git-branch" class="mt-1 h-4 w-4 text-emerald-400"></i> Offener Quellcode & öffentliche Prüfungen</li>
+            <li class="flex items-start gap-2"><i data-lucide="map" class="mt-1 h-4 w-4 text-emerald-400"></i> Werkstatt‑Reihen vor Ort</li>
+          </ul>
+          <div class="mt-6 flex gap-3">
+            <a href="mailto:kontakt@europeandigital.party" class="inline-flex items-center justify-center rounded-md bg-white px-4 py-2 text-slate-900 hover:bg-slate-100">E‑Mail senden</a>
+            <a href="#quellen" class="inline-flex items-center justify-center rounded-md border border-slate-700 px-4 py-2 text-white hover:bg-white/10">Quellen ansehen</a>
+          </div>
         </div>
-      </div>
-      <div>
-        <div class="rounded-xl border border-slate-700 bg-white/5 p-6">
-          <h3 class="text-lg font-semibold">Kurznachricht senden</h3>
-          <form class="grid gap-3 mt-3">
-            <div>
-              <label class="block text-sm">Name</label>
-              <input class="mt-1 w-full rounded-md border border-slate-700 bg-slate-800 px-3 py-2 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Vor- und Nachname">
+        <div>
+          <div class="border border-slate-800 rounded-xl bg-white/5">
+            <div class="p-6 border-b border-slate-800"><h3 class="font-semibold">Kurznachricht senden</h3></div>
+            <div class="p-6">
+              <form class="grid gap-3" onsubmit="event.preventDefault(); alert('Demo: Backend folgt im Projekt.');">
+                <div>
+                  <label class="block text-sm">Name</label>
+                  <input class="mt-1 w-full rounded-md border border-slate-700 bg-slate-800 px-3 py-2 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Vor- und Nachname" />
+                </div>
+                <div>
+                  <label class="block text-sm">E‑Mail</label>
+                  <input type="email" class="mt-1 w-full rounded-md border border-slate-700 bg-slate-800 px-3 py-2 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="name@example.org" />
+                </div>
+                <div>
+                  <label class="block text-sm">Nachricht</label>
+                  <textarea rows="4" class="mt-1 w-full rounded-md border border-slate-700 bg-slate-800 px-3 py-2 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Wie können wir helfen?"></textarea>
+                </div>
+                <button type="submit" class="inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
+                  <i data-lucide="mail" class="mr-2 h-4 w-4"></i> Nachricht senden
+                </button>
+                <p class="text-xs text-slate-400">* Formular ist eine Demo. Backend‑Anbindung (z. B. API) folgt im Projekt.</p>
+              </form>
             </div>
-            <div>
-              <label class="block text-sm">E‑Mail</label>
-              <input type="email" class="mt-1 w-full rounded-md border border-slate-700 bg-slate-800 px-3 py-2 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="name@example.org">
-            </div>
-            <div>
-              <label class="block text-sm">Nachricht</label>
-              <textarea rows="4" class="mt-1 w-full rounded-md border border-slate-700 bg-slate-800 px-3 py-2 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Wie können wir helfen?"></textarea>
-            </div>
-            <button type="button" class="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow hover:bg-slate-100">Nachricht senden</button>
-            <p class="text-xs text-slate-400">* Formular ist eine Demo. Backend‑Anbindung (z. B. API) folgt im Projekt.</p>
-          </form>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Fußzeile -->
+  <!-- Footer -->
   <footer class="border-t bg-white">
-    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto w-full container px-4 sm:px-6 lg:px-8">
       <div class="grid gap-8 py-10 md:grid-cols-4">
         <div>
-          <div class="inline-flex items-center gap-2 font-semibold text-blue-700">⛭ Europäische Digitalpartei</div>
+          <div class="inline-flex items-center gap-2 font-semibold"><i data-lucide="vote" class="h-5 w-5 text-blue-600"></i> Europäische Digitalpartei</div>
           <p class="mt-3 text-sm text-slate-600">Die Zukunft der Demokratie ist überprüfbar, inklusiv und effizient.</p>
         </div>
         <div>
@@ -372,8 +504,12 @@
         <div>
           <h3 class="text-sm font-semibold text-slate-900">Kontakt</h3>
           <div class="mt-3 flex gap-2">
-            <a href="mailto:kontakt@europeandigital.party" class="inline-flex items-center gap-2 rounded-md border px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50">E‑Mail</a>
-            <a href="#quellen" class="inline-flex items-center gap-2 rounded-md border px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50">Quellen</a>
+            <a href="mailto:kontakt@europeandigital.party" class="inline-flex items-center gap-2 rounded-md border px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50">
+              <i data-lucide="external-link" class="h-4 w-4"></i> E‑Mail
+            </a>
+            <a href="#quellen" class="inline-flex items-center gap-2 rounded-md border px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50">
+              <i data-lucide="external-link" class="h-4 w-4"></i> Quellen
+            </a>
           </div>
         </div>
       </div>
@@ -381,6 +517,22 @@
     </div>
   </footer>
 
-  <script src="./script.js"></script>
+  <script>
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Init icons
+    lucide.createIcons();
+
+    // Simple tabs
+    const btns = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.tab-panel');
+    btns.forEach(b => b.addEventListener('click', () => {
+      btns.forEach(x => x.classList.remove('bg-slate-100','text-slate-800','font-medium'));
+      panels.forEach(p => p.classList.add('hidden'));
+      const id = b.getAttribute('data-tab');
+      document.getElementById(id).classList.remove('hidden');
+      b.classList.add('bg-slate-100','text-slate-800','font-medium');
+    }));
+  </script>
 </body>
 </html>
