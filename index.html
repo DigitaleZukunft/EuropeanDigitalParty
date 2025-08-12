@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>European Digital Party - Die Zukunft der Demokratie</title>
     <meta name="description" content="Die European Digital Party - Eine moderne politische Partei für Deutschland. Erste Initiative: Volksabstimmung über KI und Blockchain zur Modernisierung der deutschen Bürokratie.">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="canonical" href="https://europeandigital.party/">
+    <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=70">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
@@ -21,6 +26,33 @@
     <meta name="twitter:title" content="European Digital Party - Volksabstimmung">
     <meta name="twitter:description" content="Stimmen Sie für Deutschlands digitale Zukunft!">
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "European Digital Party",
+      "url": "https://europeandigital.party/",
+      "logo": "https://europeandigital.party/assets/logo.jpg",
+      "sameAs": [
+        "https://twitter.com/",
+        "https://www.linkedin.com/",
+        "https://github.com/DigitaleZukunft/EuropeanDigitalParty"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "European Digital Party",
+      "url": "https://europeandigital.party/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://europeandigital.party/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 </head>
 <body>
 
@@ -29,22 +61,22 @@
     <div class="social-share-bar">
         <div class="social-share-container">
             <span class="share-label">Teilen:</span>
-            <button class="social-btn facebook" onclick="shareOnFacebook()">
+            <button class="social-btn facebook" type="button" aria-label="Auf Facebook teilen" onclick="shareOnFacebook()">
                 <i class="fab fa-facebook-f"></i>
             </button>
-            <button class="social-btn twitter" onclick="shareOnTwitter()">
+            <button class="social-btn twitter" type="button" aria-label="Auf Twitter teilen" onclick="shareOnTwitter()">
                 <i class="fab fa-twitter"></i>
             </button>
-            <button class="social-btn linkedin" onclick="shareOnLinkedIn()">
+            <button class="social-btn linkedin" type="button" aria-label="Auf LinkedIn teilen" onclick="shareOnLinkedIn()">
                 <i class="fab fa-linkedin-in"></i>
             </button>
-            <button class="social-btn whatsapp" onclick="shareOnWhatsApp()">
+            <button class="social-btn whatsapp" type="button" aria-label="Auf WhatsApp teilen" onclick="shareOnWhatsApp()">
                 <i class="fab fa-whatsapp"></i>
             </button>
-            <button class="social-btn telegram" onclick="shareOnTelegram()">
+            <button class="social-btn telegram" type="button" aria-label="Auf Telegram teilen" onclick="shareOnTelegram()">
                 <i class="fab fa-telegram-plane"></i>
             </button>
-            <button class="like-btn" onclick="toggleLike()">
+            <button class="like-btn" type="button" aria-label="Gefällt mir" onclick="toggleLike()">
                 <i class="fas fa-heart"></i>
                 <span id="likeCount">1.2K</span>
             </button>
@@ -52,13 +84,13 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Hauptnavigation">
         <div class="nav-container">
                             <div class="nav-logo">
                     <img src="assets/logo.jpg" alt="European Digital Party Logo" class="logo-image">
                     <span>European Digital Party</span>
                 </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="primary-nav">
                 <li><a href="#home" class="nav-link">Startseite</a></li>
                 <li><a href="#initiative" class="nav-link">Volksabstimmung</a></li>
                 <li><a href="#examples" class="nav-link">Beispiele</a></li>
@@ -73,20 +105,21 @@
                 <li><a href="pages/contact.html" class="nav-link">Kontakt</a></li>
                 <li><a href="#vote" class="nav-link btn-primary">Jetzt abstimmen</a></li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" type="button" aria-label="Menü" aria-controls="primary-nav" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
 
 
+    <main id="content" role="main">
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-background">
-            <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80')"></div>
+            <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=70')"></div>
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-container">
@@ -105,15 +138,15 @@
                 
                 <!-- Social Media Buttons for Hero -->
                 <div class="hero-social">
-                    <button class="social-btn facebook" onclick="shareOnFacebook()">
+                    <button class="social-btn facebook" type="button" aria-label="Auf Facebook teilen" onclick="shareOnFacebook()">
                         <i class="fab fa-facebook-f"></i>
                         <span>Teilen</span>
                     </button>
-                    <button class="social-btn twitter" onclick="shareOnTwitter()">
+                    <button class="social-btn twitter" type="button" aria-label="Auf Twitter teilen" onclick="shareOnTwitter()">
                         <i class="fab fa-twitter"></i>
                         <span>Tweet</span>
                     </button>
-                    <button class="like-btn hero-like" onclick="toggleLike()">
+                    <button class="like-btn hero-like" type="button" aria-label="Gefällt mir" onclick="toggleLike()">
                         <i class="fas fa-heart"></i>
                         <span id="heroLikeCount">1.2K</span>
                     </button>
@@ -915,12 +948,12 @@
                         <div id="verification-process" class="verification-process" style="display: none;">
                             <div class="verification-header">
                                 <h4>Identitätsverifizierung läuft...</h4>
-                                <div class="verification-progress">
-                                    <div class="progress-bar">
-                                        <div class="progress" id="verificationProgress"></div>
-                                    </div>
-                                    <span id="verificationStatus">Verbindung wird hergestellt...</span>
-                                </div>
+                                        <div class="verification-progress">
+            <div class="progress-bar">
+                <div class="progress" id="verificationProgress"></div>
+            </div>
+            <span id="verificationStatus" aria-live="polite">Verbindung wird hergestellt...</span>
+        </div>
                             </div>
                             
                             <div class="verification-steps">
@@ -955,11 +988,11 @@
                             </div>
                             
                             <div class="vote-buttons">
-                                <button class="btn btn-success" onclick="submitVote('ja')">
+                                <button class="btn btn-success" type="button" onclick="submitVote('ja')">
                                     <i class="fas fa-check"></i>
                                     JA - Für KI und Blockchain
                                 </button>
-                                <button class="btn btn-danger" onclick="submitVote('nein')">
+                                <button class="btn btn-danger" type="button" onclick="submitVote('nein')">
                                     <i class="fas fa-times"></i>
                                     NEIN - Status quo beibehalten
                                 </button>
@@ -1041,11 +1074,13 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
+        </section>
+ 
+    </main>
+ 
+     <!-- Footer -->
+     <footer class="footer">
+         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">

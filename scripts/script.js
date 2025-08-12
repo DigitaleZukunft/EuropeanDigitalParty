@@ -3,14 +3,17 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
 hamburger.addEventListener('click', () => {
+    const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
+    hamburger.setAttribute('aria-expanded', String(!isExpanded));
 });
 
 // Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
 }));
 
 // Navbar scroll effect
@@ -834,32 +837,32 @@ function showVotingInterface(method) {
 function shareOnFacebook() {
     const url = encodeURIComponent(window.location.href);
     const text = encodeURIComponent('Stimmen Sie für Deutschlands digitale Zukunft! KI und Blockchain verwandeln Bürokratie in einen Standortvorteil.');
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`, '_blank', 'width=600,height=400');
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`, '_blank', 'noopener,noreferrer,width=600,height=400');
 }
 
 function shareOnTwitter() {
     const url = encodeURIComponent(window.location.href);
     const text = encodeURIComponent('Stimmen Sie für Deutschlands digitale Zukunft! #EuropeanDigitalParty #KI #Blockchain #Volksabstimmung');
-    window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank', 'width=600,height=400');
+    window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank', 'noopener,noreferrer,width=600,height=400');
 }
 
 function shareOnLinkedIn() {
     const url = encodeURIComponent(window.location.href);
     const title = encodeURIComponent('European Digital Party - Volksabstimmung für KI & Blockchain');
     const summary = encodeURIComponent('Stimmen Sie für Deutschlands digitale Zukunft! KI und Blockchain verwandeln Bürokratie in einen Standortvorteil.');
-    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}&summary=${summary}`, '_blank', 'width=600,height=400');
+    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}&summary=${summary}`, '_blank', 'noopener,noreferrer,width=600,height=400');
 }
 
 function shareOnWhatsApp() {
     const url = encodeURIComponent(window.location.href);
     const text = encodeURIComponent('Stimmen Sie für Deutschlands digitale Zukunft! KI und Blockchain verwandeln Bürokratie in einen Standortvorteil.');
-    window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
+    window.open(`https://wa.me/?text=${text}%20${url}`, '_blank', 'noopener,noreferrer');
 }
 
 function shareOnTelegram() {
     const url = encodeURIComponent(window.location.href);
     const text = encodeURIComponent('Stimmen Sie für Deutschlands digitale Zukunft! KI und Blockchain verwandeln Bürokratie in einen Standortvorteil.');
-    window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
+    window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank', 'noopener,noreferrer');
 }
 
 let isLiked = false;
